@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Pinocchio_sOutrage",
+			"Path": "..\\Source\\Pinocchio_sOutrage.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "Pinocchio_sOutrageEditor",
+			"Path": "..\\Source\\Pinocchio_sOutrageEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
