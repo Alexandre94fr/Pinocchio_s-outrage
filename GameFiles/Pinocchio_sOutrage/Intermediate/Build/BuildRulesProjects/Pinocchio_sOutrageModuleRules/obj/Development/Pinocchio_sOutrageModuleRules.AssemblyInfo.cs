@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pinocchio_sOutrageModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a6f1d348fc2d7157aba5f884854e00a4f44b3a81")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+12457eb7e7729a4b125597e5dc4b5f377bb7e2a1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pinocchio_sOutrageModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pinocchio_sOutrageModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
