@@ -57,6 +57,12 @@
     <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Private\PlayerInputs\PlayerInputsManager.cpp">
       <Filter>Source\Pinocchio_sOutrage\Private\PlayerInputs</Filter>
     </ClCompile>
+    <Filter Include="Source\Pinocchio_sOutrage\Private\Statistics">
+      <UniqueIdentifier>{329EB425-D8E8-362D-A251-7378C494931F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Private\Statistics\CapacityStatisticsDataAsset.cpp">
+      <Filter>Source\Pinocchio_sOutrage\Private\Statistics</Filter>
+    </ClCompile>
     <Filter Include="Source\Pinocchio_sOutrage\Public">
       <UniqueIdentifier>{50CA67B8-DA62-35EC-86AD-8C1254B0EA22}</UniqueIdentifier>
     </Filter>
@@ -65,6 +71,12 @@
     </Filter>
     <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Public\PlayerInputs\PlayerInputsManager.h">
       <Filter>Source\Pinocchio_sOutrage\Public\PlayerInputs</Filter>
+    </ClCompile>
+    <Filter Include="Source\Pinocchio_sOutrage\Public\Statistics">
+      <UniqueIdentifier>{1D02C8D5-4AE2-3C40-A243-1B207C9EDEC2}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Public\Statistics\CapacityStatisticsDataAsset.h">
+      <Filter>Source\Pinocchio_sOutrage\Public\Statistics</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -270,7 +270,13 @@
     <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Private\PlayerInputs\PlayerInputsManager.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Private\Statistics\CapacityStatisticsDataAsset.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Public\PlayerInputs\PlayerInputsManager.h">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Public\Statistics\CapacityStatisticsDataAsset.h">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemGroup>
