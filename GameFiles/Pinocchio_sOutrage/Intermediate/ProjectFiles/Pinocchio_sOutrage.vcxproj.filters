@@ -11,10 +11,14 @@
     <None Include="..\..\Source\Pinocchio_sOutrageEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
       <Filter>Config</Filter>
     </None>
     <None Include="..\..\Config\DefaultEngine.ini">
@@ -29,6 +33,9 @@
     <Filter Include="Source\Pinocchio_sOutrage">
       <UniqueIdentifier>{14DBC4AD-CCFE-37B1-A510-E09ABCB9CB41}</UniqueIdentifier>
     </Filter>
+    <None Include="..\..\Source\Pinocchio_sOutrage\.editorconfig">
+      <Filter>Source\Pinocchio_sOutrage</Filter>
+    </None>
     <None Include="..\..\Source\Pinocchio_sOutrage\Pinocchio_sOutrage.Build.cs">
       <Filter>Source\Pinocchio_sOutrage</Filter>
     </None>
@@ -37,6 +44,27 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Pinocchio_sOutrage.h">
       <Filter>Source\Pinocchio_sOutrage</Filter>
+    </ClCompile>
+    <None Include="..\..\Source\Pinocchio_sOutrage\shadertoolsconfig.json">
+      <Filter>Source\Pinocchio_sOutrage</Filter>
+    </None>
+    <Filter Include="Source\Pinocchio_sOutrage\Private">
+      <UniqueIdentifier>{5C2AAE38-AB09-3446-9B41-6B8910755409}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Pinocchio_sOutrage\Private\PlayerInputs">
+      <UniqueIdentifier>{22FE5198-2FF5-34E0-A5E1-8BD2460A5C22}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Private\PlayerInputs\PlayerInputsManager.cpp">
+      <Filter>Source\Pinocchio_sOutrage\Private\PlayerInputs</Filter>
+    </ClCompile>
+    <Filter Include="Source\Pinocchio_sOutrage\Public">
+      <UniqueIdentifier>{50CA67B8-DA62-35EC-86AD-8C1254B0EA22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Pinocchio_sOutrage\Public\PlayerInputs">
+      <UniqueIdentifier>{7161C4BD-2019-35C7-86D9-9EEFE103066E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Public\PlayerInputs\PlayerInputsManager.h">
+      <Filter>Source\Pinocchio_sOutrage\Public\PlayerInputs</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -5,7 +5,35 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/StarterContent/Architecture/Floor_400x400.uasset"
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/StarterContent/Architecture/Floor_400x400.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Scenes/DevScene.umap",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Inputs/IMC_Default.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Inputs/PC_PlayerInputManager.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Inputs/GM_InLevels.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Inputs/InputActions/IA_Interact.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Inputs/InputActions/IA_Move.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Inputs/InputActions/IA_Pause.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Inputs/InputActions/IA_UseBasicCapacity1.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Inputs/InputActions/IA_UseBasicCapacity2.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Inputs/InputActions/IA_UseBasicCapacity3.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Inputs/InputActions/IA_UseSpecialCapacity1.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Inputs/InputActions/IA_UseSpecialCapacity2.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Inputs/InputActions/IA_UseSpecialCapacity3.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/GameModes/GM_InLevels.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Camera/BP_PlayerCameraManager.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Player/BP_Pinocchio.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Inputs/IA_UseSpecialCapacity1.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Inputs/IA_Move.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Inputs/IA_UseBasicCapacity1.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Inputs/IA_UseBasicCapacity2.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Inputs/IA_UseBasicCapacity3.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Inputs/IA_UseSpecialCapacity2.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Inputs/IA_UseSpecialCapacity3.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Inputs/IA_Interact.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Inputs/IA_Pause.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Inputs/NewBlueprint.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Inputs/IA_UseSpecialCapacity4.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/IMC_Default.uasset"
 			]
 		}
 	]
