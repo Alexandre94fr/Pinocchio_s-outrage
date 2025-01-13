@@ -6,14 +6,23 @@
 			"description": "Default Uncontrolled Changelist",
 			"files": [
 				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/StarterContent/Architecture/Floor_400x400.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Statistics/Characters/PinocchioCharacterStatistics.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Statistics/Characters/ClownCharacterStatistics.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Statistics/Characters/PawnCharacterStatistics.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Scenes/DevScene.umap",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Statistics/Levels/LevelsStatistics.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Capacities/BP_Capacity.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Inputs/PC_PlayerInputManager.uasset",
 				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Statistics/Capacities/PunchCapacityStatistics.uasset",
 				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Statistics/Capacities/KickCapacityStatistics.uasset",
 				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Statistics/Capacities/DodgeCapacityStatistics.uasset",
 				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Statistics/Capacities/NoseLengheningCapacityStatistics.uasset",
 				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Statistics/Capacities/ShoeThrowCapacityStatistics.uasset",
 				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Statistics/Capacities/HeadbuttCapacityStatistics.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Statistics/Capacities/CircusDanceCapacityStatistics.uasset",
 				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Statistics/Capacities/SteelBallThrowCapacityStatistics.uasset",
-				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Statistics/Capacities/CircusDanceCapacityStatistics.uasset"
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Statistics/Levels/LevelsStatisticsDataAsset.uasset",
+				"C:/Mes jeux/Unreal/_GitHub/Pinocchio_s-outrage/GameFiles/Pinocchio_sOutrage/Content/Statistics/Characters/CharacterStatistics.uasset"
 			]
 		}
 	]

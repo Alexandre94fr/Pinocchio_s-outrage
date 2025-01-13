@@ -7,7 +7,13 @@
         "Includes": [
             "c:\\mes jeux\\unreal\\_github\\pinocchio_s-outrage\\gamefiles\\pinocchio_soutrage\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\pinocchio_soutrage\\definitions.pinocchio_soutrage.h",
             "c:\\mes jeux\\unreal\\_github\\pinocchio_s-outrage\\gamefiles\\pinocchio_soutrage\\source\\pinocchio_soutrage\\public\\statistics\\capacitystatisticsdataasset.h",
-            "c:\\mes jeux\\unreal\\_github\\pinocchio_s-outrage\\gamefiles\\pinocchio_soutrage\\intermediate\\build\\win64\\unrealeditor\\inc\\pinocchio_soutrage\\uht\\capacitystatisticsdataasset.generated.h"
+            "c:\\mes jeux\\unreal\\_github\\pinocchio_s-outrage\\gamefiles\\pinocchio_soutrage\\source\\pinocchio_soutrage\\public\\playerinputs\\playerinputsmanager.h",
+            "c:\\unreal engine\\ue_5.5\\engine\\plugins\\enhancedinput\\source\\enhancedinput\\public\\inputactionvalue.h",
+            "c:\\unreal engine\\ue_5.5\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\inputactionvalue.generated.h",
+            "c:\\mes jeux\\unreal\\_github\\pinocchio_s-outrage\\gamefiles\\pinocchio_soutrage\\intermediate\\build\\win64\\unrealeditor\\inc\\pinocchio_soutrage\\uht\\playerinputsmanager.generated.h",
+            "c:\\mes jeux\\unreal\\_github\\pinocchio_s-outrage\\gamefiles\\pinocchio_soutrage\\intermediate\\build\\win64\\unrealeditor\\inc\\pinocchio_soutrage\\uht\\capacitystatisticsdataasset.generated.h",
+            "c:\\mes jeux\\unreal\\_github\\pinocchio_s-outrage\\gamefiles\\pinocchio_soutrage\\source\\pinocchio_soutrage\\public\\externaltools\\messagedebugger.h",
+            "c:\\unreal engine\\ue_5.5\\engine\\source\\runtime\\coreuobject\\public\\misc\\uobjecttoken.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

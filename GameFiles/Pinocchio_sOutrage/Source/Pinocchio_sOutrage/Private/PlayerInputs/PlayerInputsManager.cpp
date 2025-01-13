@@ -1,9 +1,13 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Made by Alexandre RICHARD. GitHub link : https://github.com/Alexandre94fr/
 
 #include "PlayerInputs/PlayerInputsManager.h"
 
+#include "ExternalTools/MessageDebugger.h"
+
 #include "EnhancedInputComponent.h"
 #include <EnhancedInputSubsystems.h>
+#include "GameFramework/Character.h"
+#include "GameFramework/Pawn.h"
 
 void APlayerInputsManager::BeginPlay()
 {
@@ -18,16 +22,16 @@ void APlayerInputsManager::BeginPlay()
 			// Adding the mapping context, 0 is the priority order
 			enhancedInputLocalPlayerSubsystem->AddMappingContext(IMC_Default, 0);
 
-			GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Green, TEXT("InputMappingContext added successfully!"));
+			MessageDebugger::CustomMessageOnScreen(-1, "InputMappingContext added successfully!", FColor::Green);
 		}
 		else
 		{
-			GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("EnhancedInputLocalPlayerSubsystem not found!"));
+			MessageDebugger::ErrorOnScreen(-1, "EnhancedInputLocalPlayerSubsystem not found!");
 		}
 	}
 	else
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("InputMappingContext or LocalPlayer missing!"));
+		MessageDebugger::ErrorOnScreen(-1, "InputMappingContext or LocalPlayer missing!");
 	}
 }
 
@@ -38,7 +42,7 @@ void APlayerInputsManager::SetupInputComponent()
 	if (UEnhancedInputComponent* enhancedInputComponent = Cast<UEnhancedInputComponent>(InputComponent))
 	{
 		if (IsDebuggingOn()) 
-			GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Green, TEXT("Successfully getting enhaved input component."));
+			MessageDebugger::CustomMessageOnScreen(-1, "Successfully getting enhaved input component.", FColor::Green);
 
 		// Linking action to local methods
 		enhancedInputComponent->BindAction(IA_Interact, ETriggerEvent::Started, this, &APlayerInputsManager::Interact);
@@ -59,7 +63,11 @@ void APlayerInputsManager::SetupInputComponent()
 
 bool APlayerInputsManager::IsDebuggingOn()
 {
-	if (GEngine && IsDebuggingInputsOn)
+	// NOTE : If we don't use the 'IsDebuggingInputsOn' directly
+	//	      it's because we don't know if we will use or not another variable like that.
+	//        So this method will avoid having to change manually every 'if (IsDebuggingInputsOn)'.
+
+	if (IsDebuggingInputsOn)
 		return true;
 
 	return false;
@@ -71,7 +79,9 @@ bool APlayerInputsManager::IsDebuggingOn()
 void APlayerInputsManager::Interact()
 {
 	if (IsDebuggingOn())
-		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::White, TEXT("Interact"));
+		MessageDebugger::MessageOnScreen(-1, "Interact");
+
+	TriggerAction(EPlayerActionType::Interact);
 }
 
 void APlayerInputsManager::Move(const FInputActionValue& p_inputActionValue)
@@ -82,49 +92,86 @@ void APlayerInputsManager::Move(const FInputActionValue& p_inputActionValue)
 	{
 		GEngine->RemoveOnScreenDebugMessage(1);
 
-		GEngine->AddOnScreenDebugMessage(1, 5.0f, FColor::White,
-			FString::Printf(TEXT("Mouvement direction : %f x, %f y"), normalizedDirection.X, normalizedDirection.Y));
+		MessageDebugger::MessageOnScreen(1, 
+			FString::Printf(TEXT("Mouvement direction : %.2f x, %.2f y"), normalizedDirection.X, normalizedDirection.Y)
+		);
 	}
+
+	TriggerAction(EPlayerActionType::Move);
 }
 
 void APlayerInputsManager::Pause()
 {
 	if (IsDebuggingOn())
-		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::White, TEXT("Pause"));
+		MessageDebugger::MessageOnScreen(-1, "Pause");
+
+	TriggerAction(EPlayerActionType::Pause);
 }
 
 void APlayerInputsManager::UsingBasicCapacity1()
 {
 	if (IsDebuggingOn())
-		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::White, TEXT("UsingBasicCapacity1"));
+		MessageDebugger::MessageOnScreen(-1, "UsingBasicCapacity1");
+
+	TriggerAction(EPlayerActionType::BasicCapacity1);
 }
 
 void APlayerInputsManager::UsingBasicCapacity2()
 {
 	if (IsDebuggingOn())
-		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::White, TEXT("UsingBasicCapacity2"));
+		MessageDebugger::MessageOnScreen(-1, "UsingBasicCapacity2");
+
+	TriggerAction(EPlayerActionType::BasicCapacity2);
 }
 
 void APlayerInputsManager::UsingBasicCapacity3()
 {
 	if (IsDebuggingOn())
-		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::White, TEXT("UsingBasicCapacity3"));
+		MessageDebugger::MessageOnScreen(-1, "UsingBasicCapacity3");
+
+	TriggerAction(EPlayerActionType::BasicCapacity3);
 }
 
 void APlayerInputsManager::UsingSpecialCapacity1()
 {
 	if (IsDebuggingOn())
-		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::White, TEXT("UsingSpecialCapacity1"));
+		MessageDebugger::MessageOnScreen(-1, "UsingSpecialCapacity1");
+
+	TriggerAction(EPlayerActionType::SpecialCapacity1);
 }
 
 void APlayerInputsManager::UsingSpecialCapacity2()
 {
 	if (IsDebuggingOn())
-		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::White, TEXT("UsingSpecialCapacity2"));
+		MessageDebugger::MessageOnScreen(-1, "UsingSpecialCapacity2");
+
+	TriggerAction(EPlayerActionType::SpecialCapacity2);
 }
 
 void APlayerInputsManager::UsingSpecialCapacity3()
 {
 	if (IsDebuggingOn())
-		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::White, TEXT("UsingSpecialCapacity3"));
+		MessageDebugger::MessageOnScreen(-1, "UsingSpecialCapacity3");
+
+	TriggerAction(EPlayerActionType::SpecialCapacity3);
+}
+
+void APlayerInputsManager::TriggerAction(EPlayerActionType p_playerActionType)
+{
+	// Get the character currently controlled by the player 
+	// (Possible upgrades to do : Cash this into a variable, witch is updated every new game start) 
+
+	if (APawn* controlledPawn = GetPawn())
+	{
+		if (ACharacter* controlledCharacter = Cast<ACharacter>(controlledPawn))
+		{
+			// EXEMPLE CODE
+			//if (IGameCharacterInterface* GameCharacter = Cast<IGameCharacterInterface>(controlledCharacter))
+			//{
+			//	GameCharacter->Execute_UseAbility(GameCharacter, p_playerActionType);
+			//}
+		}
+	}
+
+
 }

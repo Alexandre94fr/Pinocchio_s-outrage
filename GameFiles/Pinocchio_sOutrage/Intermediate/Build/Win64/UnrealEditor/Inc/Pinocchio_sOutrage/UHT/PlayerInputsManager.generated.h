@@ -50,7 +50,7 @@ PINOCCHIO_SOUTRAGE_API void FOnUsingSpecialCapacity2_DelegateWrapper(const FMult
 PINOCCHIO_SOUTRAGE_API void FOnUsingSpecialCapacity3_DelegateWrapper(const FMulticastScriptDelegate& OnUsingSpecialCapacity3);
 
 
-#define FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_PlayerInputs_PlayerInputsManager_h_38_INCLASS_NO_PURE_DECLS \
+#define FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_PlayerInputs_PlayerInputsManager_h_54_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAPlayerInputsManager(); \
 	friend struct Z_Construct_UClass_APlayerInputsManager_Statics; \
@@ -59,7 +59,7 @@ public: \
 	DECLARE_SERIALIZER(APlayerInputsManager)
 
 
-#define FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_PlayerInputs_PlayerInputsManager_h_38_ENHANCED_CONSTRUCTORS \
+#define FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_PlayerInputs_PlayerInputsManager_h_54_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API APlayerInputsManager(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
@@ -73,12 +73,12 @@ public: \
 	NO_API virtual ~APlayerInputsManager();
 
 
-#define FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_PlayerInputs_PlayerInputsManager_h_35_PROLOG
-#define FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_PlayerInputs_PlayerInputsManager_h_38_GENERATED_BODY \
+#define FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_PlayerInputs_PlayerInputsManager_h_51_PROLOG
+#define FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_PlayerInputs_PlayerInputsManager_h_54_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_PlayerInputs_PlayerInputsManager_h_38_INCLASS_NO_PURE_DECLS \
-	FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_PlayerInputs_PlayerInputsManager_h_38_ENHANCED_CONSTRUCTORS \
+	FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_PlayerInputs_PlayerInputsManager_h_54_INCLASS_NO_PURE_DECLS \
+	FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_PlayerInputs_PlayerInputsManager_h_54_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -88,5 +88,20 @@ template<> PINOCCHIO_SOUTRAGE_API UClass* StaticClass<class APlayerInputsManager
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_PlayerInputs_PlayerInputsManager_h
 
+
+#define FOREACH_ENUM_EPLAYERACTIONTYPE(op) \
+	op(EPlayerActionType::Interact) \
+	op(EPlayerActionType::Move) \
+	op(EPlayerActionType::BasicCapacity1) \
+	op(EPlayerActionType::BasicCapacity2) \
+	op(EPlayerActionType::BasicCapacity3) \
+	op(EPlayerActionType::SpecialCapacity1) \
+	op(EPlayerActionType::SpecialCapacity2) \
+	op(EPlayerActionType::SpecialCapacity3) \
+	op(EPlayerActionType::Pause) 
+
+enum class EPlayerActionType : uint8;
+template<> struct TIsUEnumClass<EPlayerActionType> { enum { Value = true }; };
+template<> PINOCCHIO_SOUTRAGE_API UEnum* StaticEnum<EPlayerActionType>();
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

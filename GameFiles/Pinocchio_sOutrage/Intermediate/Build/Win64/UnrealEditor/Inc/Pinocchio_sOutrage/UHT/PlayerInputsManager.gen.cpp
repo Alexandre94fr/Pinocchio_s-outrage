@@ -16,6 +16,7 @@ ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputAction_NoRegister();
 ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputMappingContext_NoRegister();
 PINOCCHIO_SOUTRAGE_API UClass* Z_Construct_UClass_APlayerInputsManager();
 PINOCCHIO_SOUTRAGE_API UClass* Z_Construct_UClass_APlayerInputsManager_NoRegister();
+PINOCCHIO_SOUTRAGE_API UEnum* Z_Construct_UEnum_Pinocchio_sOutrage_EPlayerActionType();
 PINOCCHIO_SOUTRAGE_API UFunction* Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnInteraction__DelegateSignature();
 PINOCCHIO_SOUTRAGE_API UFunction* Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnMovement__DelegateSignature();
 PINOCCHIO_SOUTRAGE_API UFunction* Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnPause__DelegateSignature();
@@ -280,6 +281,72 @@ void FOnUsingSpecialCapacity3_DelegateWrapper(const FMulticastScriptDelegate& On
 }
 // End Delegate FOnUsingSpecialCapacity3
 
+// Begin Enum EPlayerActionType
+static FEnumRegistrationInfo Z_Registration_Info_UEnum_EPlayerActionType;
+static UEnum* EPlayerActionType_StaticEnum()
+{
+	if (!Z_Registration_Info_UEnum_EPlayerActionType.OuterSingleton)
+	{
+		Z_Registration_Info_UEnum_EPlayerActionType.OuterSingleton = GetStaticEnum(Z_Construct_UEnum_Pinocchio_sOutrage_EPlayerActionType, (UObject*)Z_Construct_UPackage__Script_Pinocchio_sOutrage(), TEXT("EPlayerActionType"));
+	}
+	return Z_Registration_Info_UEnum_EPlayerActionType.OuterSingleton;
+}
+template<> PINOCCHIO_SOUTRAGE_API UEnum* StaticEnum<EPlayerActionType>()
+{
+	return EPlayerActionType_StaticEnum();
+}
+struct Z_Construct_UEnum_Pinocchio_sOutrage_EPlayerActionType_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+		{ "BasicCapacity1.Name", "EPlayerActionType::BasicCapacity1" },
+		{ "BasicCapacity2.Name", "EPlayerActionType::BasicCapacity2" },
+		{ "BasicCapacity3.Name", "EPlayerActionType::BasicCapacity3" },
+		{ "BlueprintType", "true" },
+		{ "Interact.Name", "EPlayerActionType::Interact" },
+		{ "ModuleRelativePath", "Public/PlayerInputs/PlayerInputsManager.h" },
+		{ "Move.Name", "EPlayerActionType::Move" },
+		{ "Pause.Name", "EPlayerActionType::Pause" },
+		{ "SpecialCapacity1.Name", "EPlayerActionType::SpecialCapacity1" },
+		{ "SpecialCapacity2.Name", "EPlayerActionType::SpecialCapacity2" },
+		{ "SpecialCapacity3.Name", "EPlayerActionType::SpecialCapacity3" },
+	};
+#endif // WITH_METADATA
+	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
+		{ "EPlayerActionType::Interact", (int64)EPlayerActionType::Interact },
+		{ "EPlayerActionType::Move", (int64)EPlayerActionType::Move },
+		{ "EPlayerActionType::BasicCapacity1", (int64)EPlayerActionType::BasicCapacity1 },
+		{ "EPlayerActionType::BasicCapacity2", (int64)EPlayerActionType::BasicCapacity2 },
+		{ "EPlayerActionType::BasicCapacity3", (int64)EPlayerActionType::BasicCapacity3 },
+		{ "EPlayerActionType::SpecialCapacity1", (int64)EPlayerActionType::SpecialCapacity1 },
+		{ "EPlayerActionType::SpecialCapacity2", (int64)EPlayerActionType::SpecialCapacity2 },
+		{ "EPlayerActionType::SpecialCapacity3", (int64)EPlayerActionType::SpecialCapacity3 },
+		{ "EPlayerActionType::Pause", (int64)EPlayerActionType::Pause },
+	};
+	static const UECodeGen_Private::FEnumParams EnumParams;
+};
+const UECodeGen_Private::FEnumParams Z_Construct_UEnum_Pinocchio_sOutrage_EPlayerActionType_Statics::EnumParams = {
+	(UObject*(*)())Z_Construct_UPackage__Script_Pinocchio_sOutrage,
+	nullptr,
+	"EPlayerActionType",
+	"EPlayerActionType",
+	Z_Construct_UEnum_Pinocchio_sOutrage_EPlayerActionType_Statics::Enumerators,
+	RF_Public|RF_Transient|RF_MarkAsNative,
+	UE_ARRAY_COUNT(Z_Construct_UEnum_Pinocchio_sOutrage_EPlayerActionType_Statics::Enumerators),
+	EEnumFlags::None,
+	(uint8)UEnum::ECppForm::EnumClass,
+	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UEnum_Pinocchio_sOutrage_EPlayerActionType_Statics::Enum_MetaDataParams), Z_Construct_UEnum_Pinocchio_sOutrage_EPlayerActionType_Statics::Enum_MetaDataParams)
+};
+UEnum* Z_Construct_UEnum_Pinocchio_sOutrage_EPlayerActionType()
+{
+	if (!Z_Registration_Info_UEnum_EPlayerActionType.InnerSingleton)
+	{
+		UECodeGen_Private::ConstructUEnum(Z_Registration_Info_UEnum_EPlayerActionType.InnerSingleton, Z_Construct_UEnum_Pinocchio_sOutrage_EPlayerActionType_Statics::EnumParams);
+	}
+	return Z_Registration_Info_UEnum_EPlayerActionType.InnerSingleton;
+}
+// End Enum EPlayerActionType
+
 // Begin Class APlayerInputsManager
 void APlayerInputsManager::StaticRegisterNativesAPlayerInputsManager()
 {
@@ -496,13 +563,16 @@ APlayerInputsManager::~APlayerInputsManager() {}
 // Begin Registration
 struct Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_PlayerInputs_PlayerInputsManager_h_Statics
 {
+	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
+		{ EPlayerActionType_StaticEnum, TEXT("EPlayerActionType"), &Z_Registration_Info_UEnum_EPlayerActionType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1346979213U) },
+	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_APlayerInputsManager, APlayerInputsManager::StaticClass, TEXT("APlayerInputsManager"), &Z_Registration_Info_UClass_APlayerInputsManager, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APlayerInputsManager), 4195986563U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_PlayerInputs_PlayerInputsManager_h_2868731088(TEXT("/Script/Pinocchio_sOutrage"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_PlayerInputs_PlayerInputsManager_h_2652135910(TEXT("/Script/Pinocchio_sOutrage"),
 	Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_PlayerInputs_PlayerInputsManager_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_PlayerInputs_PlayerInputsManager_h_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_PlayerInputs_PlayerInputsManager_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_PlayerInputs_PlayerInputsManager_h_Statics::EnumInfo));
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -13,6 +13,7 @@ void EmptyLinkFunctionForGeneratedCodeCapacityStatisticsDataAsset() {}
 ENGINE_API UClass* Z_Construct_UClass_UPrimaryDataAsset();
 PINOCCHIO_SOUTRAGE_API UClass* Z_Construct_UClass_UCapacityStatisticsDataAsset();
 PINOCCHIO_SOUTRAGE_API UClass* Z_Construct_UClass_UCapacityStatisticsDataAsset_NoRegister();
+PINOCCHIO_SOUTRAGE_API UEnum* Z_Construct_UEnum_Pinocchio_sOutrage_EPlayerActionType();
 UPackage* Z_Construct_UPackage__Script_Pinocchio_sOutrage();
 // End Cross Module References
 
@@ -44,12 +45,10 @@ struct Z_Construct_UClass_UCapacityStatisticsDataAsset_Statics
 		{ "Category", "Basic informations" },
 		{ "ClampMax", "10" },
 		{ "ClampMin", "0" },
-		{ "DisplayName", "NumberOfSkillPointsRequiredToUnlock (Skill Point)" },
 		{ "ModuleRelativePath", "Public/Statistics/CapacityStatisticsDataAsset.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LaunchCapacityKey_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CapacityType_MetaData[] = {
 		{ "Category", "Basic informations" },
-		{ "DisplayName", "LaunchCapacityKey (Key)" },
 		{ "ModuleRelativePath", "Public/Statistics/CapacityStatisticsDataAsset.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Damage_MetaData[] = {
@@ -149,8 +148,8 @@ struct Z_Construct_UClass_UCapacityStatisticsDataAsset_Statics
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FNamePropertyParams NewProp_Name;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_NumberOfSkillPointsRequiredToUnlock;
-	static void NewProp_LaunchCapacityKey_SetBit(void* Obj);
-	static const UECodeGen_Private::FBoolPropertyParams NewProp_LaunchCapacityKey;
+	static const UECodeGen_Private::FBytePropertyParams NewProp_CapacityType_Underlying;
+	static const UECodeGen_Private::FEnumPropertyParams NewProp_CapacityType;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_Damage;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_Reach;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ArmingTime;
@@ -176,11 +175,8 @@ struct Z_Construct_UClass_UCapacityStatisticsDataAsset_Statics
 };
 const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_UCapacityStatisticsDataAsset_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCapacityStatisticsDataAsset, Name), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Name_MetaData), NewProp_Name_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UCapacityStatisticsDataAsset_Statics::NewProp_NumberOfSkillPointsRequiredToUnlock = { "NumberOfSkillPointsRequiredToUnlock", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCapacityStatisticsDataAsset, NumberOfSkillPointsRequiredToUnlock), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NumberOfSkillPointsRequiredToUnlock_MetaData), NewProp_NumberOfSkillPointsRequiredToUnlock_MetaData) };
-void Z_Construct_UClass_UCapacityStatisticsDataAsset_Statics::NewProp_LaunchCapacityKey_SetBit(void* Obj)
-{
-	((UCapacityStatisticsDataAsset*)Obj)->LaunchCapacityKey = 1;
-}
-const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UCapacityStatisticsDataAsset_Statics::NewProp_LaunchCapacityKey = { "LaunchCapacityKey", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UCapacityStatisticsDataAsset), &Z_Construct_UClass_UCapacityStatisticsDataAsset_Statics::NewProp_LaunchCapacityKey_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LaunchCapacityKey_MetaData), NewProp_LaunchCapacityKey_MetaData) };
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UCapacityStatisticsDataAsset_Statics::NewProp_CapacityType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UCapacityStatisticsDataAsset_Statics::NewProp_CapacityType = { "CapacityType", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCapacityStatisticsDataAsset, CapacityType), Z_Construct_UEnum_Pinocchio_sOutrage_EPlayerActionType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CapacityType_MetaData), NewProp_CapacityType_MetaData) }; // 1346979213
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UCapacityStatisticsDataAsset_Statics::NewProp_Damage = { "Damage", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCapacityStatisticsDataAsset, Damage), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Damage_MetaData), NewProp_Damage_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UCapacityStatisticsDataAsset_Statics::NewProp_Reach = { "Reach", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCapacityStatisticsDataAsset, Reach), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Reach_MetaData), NewProp_Reach_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UCapacityStatisticsDataAsset_Statics::NewProp_ArmingTime = { "ArmingTime", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCapacityStatisticsDataAsset, ArmingTime), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ArmingTime_MetaData), NewProp_ArmingTime_MetaData) };
@@ -209,7 +205,8 @@ const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UCapacityStatist
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UCapacityStatisticsDataAsset_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCapacityStatisticsDataAsset_Statics::NewProp_Name,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCapacityStatisticsDataAsset_Statics::NewProp_NumberOfSkillPointsRequiredToUnlock,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCapacityStatisticsDataAsset_Statics::NewProp_LaunchCapacityKey,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCapacityStatisticsDataAsset_Statics::NewProp_CapacityType_Underlying,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCapacityStatisticsDataAsset_Statics::NewProp_CapacityType,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCapacityStatisticsDataAsset_Statics::NewProp_Damage,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCapacityStatisticsDataAsset_Statics::NewProp_Reach,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCapacityStatisticsDataAsset_Statics::NewProp_ArmingTime,
@@ -266,10 +263,10 @@ UCapacityStatisticsDataAsset::~UCapacityStatisticsDataAsset() {}
 struct Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_Statistics_CapacityStatisticsDataAsset_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UCapacityStatisticsDataAsset, UCapacityStatisticsDataAsset::StaticClass, TEXT("UCapacityStatisticsDataAsset"), &Z_Registration_Info_UClass_UCapacityStatisticsDataAsset, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCapacityStatisticsDataAsset), 464249308U) },
+		{ Z_Construct_UClass_UCapacityStatisticsDataAsset, UCapacityStatisticsDataAsset::StaticClass, TEXT("UCapacityStatisticsDataAsset"), &Z_Registration_Info_UClass_UCapacityStatisticsDataAsset, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCapacityStatisticsDataAsset), 3918576605U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_Statistics_CapacityStatisticsDataAsset_h_595317454(TEXT("/Script/Pinocchio_sOutrage"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_Statistics_CapacityStatisticsDataAsset_h_1502664973(TEXT("/Script/Pinocchio_sOutrage"),
 	Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_Statistics_CapacityStatisticsDataAsset_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_Statistics_CapacityStatisticsDataAsset_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

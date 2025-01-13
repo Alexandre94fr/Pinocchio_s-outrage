@@ -1,6 +1,8 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Made by Alexandre RICHARD. GitHub link : https://github.com/Alexandre94fr/
 
 #pragma once
+
+#include "PlayerInputs/PlayerInputsManager.h"
 
 #include "CoreMinimal.h"
 #include "Engine/DataAsset.h"
@@ -21,11 +23,11 @@ public:
 	UPROPERTY(EditDefaultsOnly, Category = "Basic informations")
 	FName Name;
 
-	UPROPERTY(EditDefaultsOnly, Category = "Basic informations", DisplayName = "NumberOfSkillPointsRequiredToUnlock (Skill Point)", meta = (ClampMin = 0, ClampMax = 10))
+	UPROPERTY(EditDefaultsOnly, Category = "Basic informations", meta = (ClampMin = 0, ClampMax = 10))
 	int NumberOfSkillPointsRequiredToUnlock;
 
-	UPROPERTY(EditDefaultsOnly, Category = "Basic informations", DisplayName = "LaunchCapacityKey (Key)")
-	bool LaunchCapacityKey; // Key
+	UPROPERTY(EditDefaultsOnly, Category = "Basic informations")
+	EPlayerActionType CapacityType;
 #pragma endregion
 
 #pragma region Attack informations
@@ -72,4 +74,8 @@ public:
 	UPROPERTY(EditDefaultsOnly, Category = "Capacity effects")
 	bool SecondCapacityEffectWhenFailed; // Function
 #pragma endregion
+
+private:
+
+	void PostEditChangeProperty(FPropertyChangedEvent& p_propertyChangedEvent);
 };
