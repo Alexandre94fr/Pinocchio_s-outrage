@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\mes jeux\\unreal\\_github\\pinocchio_s-outrage\\gamefiles\\pinocchio_soutrage\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\pinocchio_soutrage\\permoduleinline.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\mes jeux\\unreal\\_github\\pinocchio_s-outrage\\gamefiles\\pinocchio_soutrage\\intermediate\\build\\win64\\x64\\pinocchio_soutrageeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\mes jeux\\unreal\\_github\\pinocchio_s-outrage\\gamefiles\\pinocchio_soutrage\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\pinocchio_soutrage\\definitions.pinocchio_soutrage.h",
+            "c:\\unreal engine\\ue_5.5\\engine\\source\\runtime\\core\\public\\hal\\permoduleinline.inl"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
