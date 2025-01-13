@@ -1,0 +1,178 @@
+[*.{cpp,h}]
+
+# This .editorconfig file was made by Alexandre RICHARD.
+# GitHub link : https://github.com/Alexandre94fr/
+
+############################
+###### DOES NOT WORK #######
+############################
+
+###################
+ # DOCUMENTATION #
+###################  
+
+ # The following links are the informations I founded when making this file.
+ # Beware tho, those links are for C#, I did not found documentation for C++.
+
+ # More documentations / explanations are directly on the first convention rule.
+ 
+ # Naming rules :
+ https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/naming-rules
+
+ # Severity levels :
+ https://learn.microsoft.com/en-us/visualstudio/code-quality/use-roslyn-analyzers?view=vs-2022
+
+########################
+ # NAMING CONVENTIONS #
+########################  
+
+  # -- Naming convention rules (ordered from specific to general) -- #  
+    
+    # - Global - #
+    
+    # "public_class_variables" is the rule name, you can consider it like a variable, it can be nammed anything.
+    
+    # "public_protected_class_variables_symbols" is the Specification name, you can consider it like a variable, it can be nammed anything.
+    # It saves the type of code key words to look for (Property, Method, Enum, etc...)
+    cpp_naming_rule.public_class_variables.symbols      = public_protected_class_variables_symbols 
+    
+    # "public_protected_class_variables_style" is the style name, you can consider it like a variable, it can be nammed anything.
+    # It saves what namming modifications you want to the key words's variable name (ex : myVariable -> EXEMPLE_MyVariable)
+    cpp_naming_rule.public_class_variables.style        = public_protected_class_variables_style
+  
+    # NOTE : If you want you can share same symbols or / and style in multiple rules.
+  
+    # "suggestion" represents an enum value (check out "Severity levels" documentation above to see all enum values) 
+    # The severity is set on "suggestion" by default, so we don't need to put it each time.
+    cpp_naming_rule.public_class_variables.severity	    = suggestion
+    
+    cpp_naming_rule.private_class_variables.symbols	    = private_class_variable_symbols
+    cpp_naming_rule.private_class_variables.style	    = private_class_variable_style
+    cpp_naming_rule.private_class_variables.severity    = suggestion
+    
+    cpp_naming_rule.method_parameters.symbols		    = method_parameters_symbols
+    cpp_naming_rule.method_parameters.style			    = method_parameter_style
+    cpp_naming_rule.method_parameters.severity          = warning
+  
+    cpp_naming_rule.local_variables.symbols		        = local_variables_symbols
+    cpp_naming_rule.local_variables.style		        = local_variable_style
+    cpp_naming_rule.method_parameters.severity          = warning
+    
+    # - Unreal Engine - #
+  
+    cpp_naming_rule.ue_aactor_class.symbols	    = ue_aactor_class_symbols
+    cpp_naming_rule.ue_aactor_class.style		= ue_aactor_class_style
+  
+    cpp_naming_rule.ue_swidget_class.symbols	= ue_swidget_class_symbols
+    cpp_naming_rule.ue_swidget_class.style		= ue_swidget_class_style
+  
+    cpp_naming_rule.ue_uobject_class.symbols	= ue_uobject_class_symbols
+    cpp_naming_rule.ue_uobject_class.style		= ue_uobject_class_style
+  
+    cpp_naming_rule.ue_structs.symbols			= ue_structs_symbols
+    cpp_naming_rule.ue_structs.style			= ue_structs_style
+  
+    cpp_naming_rule.ue_enums.symbols			= ue_enums_symbols
+    cpp_naming_rule.ue_enums.style				= ue_enums_style
+  
+    cpp_naming_rule.ue_templates.symbols		= ue_templates_symbols
+    cpp_naming_rule.ue_templates.style          = ue_templates_style
+
+  # -- Naming convention symbols -- #  
+  
+    # - Global - #
+
+    # Documentation for that available above in DOCUMENTATION -> Naming rules (link) -> Symbol group properties.
+    cpp_naming_symbols.public_protected_class_variables_symbols.applicable_kinds            = field
+    cpp_naming_symbols.public_protected_class_variables_symbols.applicable_accessibilitie   = public, protected
+    cpp_naming_symbols.public_protected_class_variables_symbols.required_modifiers          = # Un-used, and unnecessary, just here to show all posibilities.
+
+    cpp_naming_symbols.private_class_variable_symbols.applicable_kinds                      = field
+    cpp_naming_symbols.private_class_variable_symbols.applicable_accessibilitie             = private
+
+    cpp_naming_symbols.local_variables_symbols.applicable_kinds                             = local
+    cpp_naming_symbols.local_variables_symbols.applicable_accessibilities                   = *
+    
+    cpp_naming_symbols.method_parameters_symbols.applicable_kinds		                    = parameter
+    cpp_naming_symbols.method_parameters_symbols.applicable_accessibilities                 = *
+    
+    # - Unreal Engine - #
+
+    cpp_naming_symbols.ue_aactor_class_symbols.applicable_kinds     = class
+    cpp_naming_symbols.ue_aactor_class_symbols.applicable_type      = AActor
+    
+    cpp_naming_symbols.ue_swidget_class_symbols.applicable_kinds    = class
+    cpp_naming_symbols.ue_swidget_class_symbols.applicable_type		= SWidget
+    
+    cpp_naming_symbols.ue_uobject_class_symbols.applicable_kinds    = class
+    cpp_naming_symbols.ue_uobject_class_symbols.applicable_type		= UObject
+    
+    cpp_naming_symbols.ue_enums_symbols.applicable_kinds			= enum
+    
+    cpp_naming_symbols.ue_templates_symbols.applicable_kinds		= template_class
+    
+    cpp_naming_symbols.ue_structs_symbols.applicable_kinds			= struct
+ 
+  # -- Naming convention styles -- #  
+ 
+    # Result : MyVariable
+    cpp_naming_style.public_protected_class_variables_style.capitalization   = pascal_case
+    cpp_naming_style.public_protected_class_variables_style.required_prefix  = # Un-used, and unnecessary, just here to show all posibilities.
+    cpp_naming_style.public_protected_class_variables_style.required_suffix  = # Un-used, and unnecessary, just here to show all posibilities.
+    cpp_naming_style.public_protected_class_variables_style.word_separator   = # Un-used, and unnecessary, just here to show all posibilities.
+    
+    # Result : _myVariable
+    cpp_naming_style.private_class_variable_style.capitalization             = camel_case
+    cpp_naming_style.private_class_variable_style.required_prefix            = _
+    cpp_naming_style.private_class_variable_style.required_suffix            = 
+    cpp_naming_style.private_class_variable_style.word_separator             = 
+    
+    # Result : p_myVariable
+    cpp_naming_style.method_parameter_style.capitalization                   = camel_case
+    cpp_naming_style.method_parameter_style.required_prefix                  = p_
+    cpp_naming_style.method_parameter_style.required_suffix                  =
+    cpp_naming_style.method_parameter_style.word_separator                   =
+    
+    # Result : myVariable
+    cpp_naming_style.local_variable_style.capitalization                     = camel_case
+    cpp_naming_style.local_variable_style.required_prefix                    =
+    cpp_naming_style.local_variable_style.required_suffix                    =
+    cpp_naming_style.local_variable_style.word_separator                     =
+    
+    # - Unreal Engine - #
+    
+    # Result : AMyVariable
+    cpp_naming_style.ue_aactor_class_style.capitalization    = pascal_case
+    cpp_naming_style.ue_aactor_class_style.required_prefix   = A
+    cpp_naming_style.ue_aactor_class_style.required_suffix   =
+    cpp_naming_style.ue_aactor_class_style.word_separator    =
+    
+    # Result : SMyVariable
+    cpp_naming_style.ue_swidget_class_style.capitalization   = pascal_case
+    cpp_naming_style.ue_swidget_class_style.required_prefix  = S
+    cpp_naming_style.ue_swidget_class_style.required_suffix  =
+    cpp_naming_style.ue_swidget_class_style.word_separator   =
+    
+    # Result : UMyVariable
+    cpp_naming_style.ue_uobject_class_style.capitalization   = pascal_case
+    cpp_naming_style.ue_uobject_class_style.required_prefix  = U
+    cpp_naming_style.ue_uobject_class_style.required_suffix  =
+    cpp_naming_style.ue_uobject_class_style.word_separator   =
+    
+    # Result : FMyVariable
+    cpp_naming_style.ue_structs_style.capitalization         = pascal_case
+    cpp_naming_style.ue_structs_style.required_prefix        = F
+    cpp_naming_style.ue_structs_style.required_suffix        =
+    cpp_naming_style.ue_structs_style.word_separator         =
+    
+    # Result : EMyVariable
+    cpp_naming_style.ue_enums_style.capitalization           = pascal_case
+    cpp_naming_style.ue_enums_style.required_prefix          = E
+    cpp_naming_style.ue_enums_style.required_suffix          =
+    cpp_naming_style.ue_enums_style.word_separator           =
+    
+    # Result : TMyVariable
+    cpp_naming_style.ue_templates_style.capitalization       = pascal_case
+    cpp_naming_style.ue_templates_style.required_prefix      = T
+    cpp_naming_style.ue_templates_style.required_suffix      =
+    cpp_naming_style.ue_templates_style.word_separator       =
