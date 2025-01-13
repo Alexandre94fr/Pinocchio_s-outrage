@@ -11,15 +11,10 @@
     <None Include="..\..\Source\Pinocchio_sOutrageEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
-    <None Include="..\..\.editorconfig" />
-    <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
       <Filter>Config</Filter>
     </None>
     <None Include="..\..\Config\DefaultEngine.ini">
@@ -34,9 +29,6 @@
     <Filter Include="Source\Pinocchio_sOutrage">
       <UniqueIdentifier>{14DBC4AD-CCFE-37B1-A510-E09ABCB9CB41}</UniqueIdentifier>
     </Filter>
-    <None Include="..\..\Source\Pinocchio_sOutrage\.editorconfig">
-      <Filter>Source\Pinocchio_sOutrage</Filter>
-    </None>
     <None Include="..\..\Source\Pinocchio_sOutrage\Pinocchio_sOutrage.Build.cs">
       <Filter>Source\Pinocchio_sOutrage</Filter>
     </None>
@@ -45,165 +37,6 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Pinocchio_sOutrage.h">
       <Filter>Source\Pinocchio_sOutrage</Filter>
-    </ClCompile>
-    <None Include="..\..\Source\Pinocchio_sOutrage\shadertoolsconfig.json">
-      <Filter>Source\Pinocchio_sOutrage</Filter>
-    </None>
-    <Filter Include="Source\Pinocchio_sOutrage\Private">
-      <UniqueIdentifier>{5C2AAE38-AB09-3446-9B41-6B8910755409}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Pinocchio_sOutrage\Private\Capacity">
-      <UniqueIdentifier>{A2EBD888-658C-3AB0-A20A-8D4FB3FEE74F}</UniqueIdentifier>
-    </Filter>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Private\Capacity\Capacity.cpp">
-      <Filter>Source\Pinocchio_sOutrage\Private\Capacity</Filter>
-    </ClCompile>
-    <Filter Include="Source\Pinocchio_sOutrage\Private\Capacity\Capacities">
-      <UniqueIdentifier>{224A20D3-B606-3D0F-84CD-EC6CCCC252FB}</UniqueIdentifier>
-    </Filter>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Private\Capacity\Capacities\CircusDanceCapacity.cpp">
-      <Filter>Source\Pinocchio_sOutrage\Private\Capacity\Capacities</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Private\Capacity\Capacities\DodgeCapacity.cpp">
-      <Filter>Source\Pinocchio_sOutrage\Private\Capacity\Capacities</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Private\Capacity\Capacities\HeadbuttCapacity.cpp">
-      <Filter>Source\Pinocchio_sOutrage\Private\Capacity\Capacities</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Private\Capacity\Capacities\KickCapacity.cpp">
-      <Filter>Source\Pinocchio_sOutrage\Private\Capacity\Capacities</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Private\Capacity\Capacities\NoseLengtheningCapacity.cpp">
-      <Filter>Source\Pinocchio_sOutrage\Private\Capacity\Capacities</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Private\Capacity\Capacities\PunchCapacity.cpp">
-      <Filter>Source\Pinocchio_sOutrage\Private\Capacity\Capacities</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Private\Capacity\Capacities\ShoeThrowCapacity.cpp">
-      <Filter>Source\Pinocchio_sOutrage\Private\Capacity\Capacities</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Private\Capacity\Capacities\SteelBallThrowCapacity.cpp">
-      <Filter>Source\Pinocchio_sOutrage\Private\Capacity\Capacities</Filter>
-    </ClCompile>
-    <Filter Include="Source\Pinocchio_sOutrage\Private\Character">
-      <UniqueIdentifier>{AE674A67-939D-3C8F-B095-31BD3651BD92}</UniqueIdentifier>
-    </Filter>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Private\Character\GameCharacter.cpp">
-      <Filter>Source\Pinocchio_sOutrage\Private\Character</Filter>
-    </ClCompile>
-    <Filter Include="Source\Pinocchio_sOutrage\Private\Character\Characters">
-      <UniqueIdentifier>{3A333084-EB5C-301F-9FE3-9261F1D4AEE1}</UniqueIdentifier>
-    </Filter>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Private\Character\Characters\ClownCharacter.cpp">
-      <Filter>Source\Pinocchio_sOutrage\Private\Character\Characters</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Private\Character\Characters\PawnCharacter.cpp">
-      <Filter>Source\Pinocchio_sOutrage\Private\Character\Characters</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Private\Character\Characters\PinocchioCharacter.cpp">
-      <Filter>Source\Pinocchio_sOutrage\Private\Character\Characters</Filter>
-    </ClCompile>
-    <Filter Include="Source\Pinocchio_sOutrage\Private\ExternalTools">
-      <UniqueIdentifier>{7F3DDC99-6929-3BD6-A2E0-388F704E4FF0}</UniqueIdentifier>
-    </Filter>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Private\ExternalTools\MessageDebugger.cpp">
-      <Filter>Source\Pinocchio_sOutrage\Private\ExternalTools</Filter>
-    </ClCompile>
-    <Filter Include="Source\Pinocchio_sOutrage\Private\PlayerInputs">
-      <UniqueIdentifier>{22FE5198-2FF5-34E0-A5E1-8BD2460A5C22}</UniqueIdentifier>
-    </Filter>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Private\PlayerInputs\PlayerInputsManager.cpp">
-      <Filter>Source\Pinocchio_sOutrage\Private\PlayerInputs</Filter>
-    </ClCompile>
-    <Filter Include="Source\Pinocchio_sOutrage\Private\Statistics">
-      <UniqueIdentifier>{329EB425-D8E8-362D-A251-7378C494931F}</UniqueIdentifier>
-    </Filter>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Private\Statistics\CapacityStatisticsDataAsset.cpp">
-      <Filter>Source\Pinocchio_sOutrage\Private\Statistics</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Private\Statistics\CharacterStatisticsDataAsset.cpp">
-      <Filter>Source\Pinocchio_sOutrage\Private\Statistics</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Private\Statistics\LevelsStatisticsDataAsset.cpp">
-      <Filter>Source\Pinocchio_sOutrage\Private\Statistics</Filter>
-    </ClCompile>
-    <Filter Include="Source\Pinocchio_sOutrage\Public">
-      <UniqueIdentifier>{50CA67B8-DA62-35EC-86AD-8C1254B0EA22}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Pinocchio_sOutrage\Public\Capacity">
-      <UniqueIdentifier>{EB368645-29A2-318A-AEE9-F14EEA62F6A6}</UniqueIdentifier>
-    </Filter>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Public\Capacity\Capacity.h">
-      <Filter>Source\Pinocchio_sOutrage\Public\Capacity</Filter>
-    </ClCompile>
-    <Filter Include="Source\Pinocchio_sOutrage\Public\Capacity\Capacities">
-      <UniqueIdentifier>{B6A87572-8BBB-3867-BEAC-88F77641B9E5}</UniqueIdentifier>
-    </Filter>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Public\Capacity\Capacities\CircusDanceCapacity.h">
-      <Filter>Source\Pinocchio_sOutrage\Public\Capacity\Capacities</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Public\Capacity\Capacities\DodgeCapacity.h">
-      <Filter>Source\Pinocchio_sOutrage\Public\Capacity\Capacities</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Public\Capacity\Capacities\HeadbuttCapacity.h">
-      <Filter>Source\Pinocchio_sOutrage\Public\Capacity\Capacities</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Public\Capacity\Capacities\KickCapacity.h">
-      <Filter>Source\Pinocchio_sOutrage\Public\Capacity\Capacities</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Public\Capacity\Capacities\NoseLengtheningCapacity.h">
-      <Filter>Source\Pinocchio_sOutrage\Public\Capacity\Capacities</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Public\Capacity\Capacities\PunchCapacity.h">
-      <Filter>Source\Pinocchio_sOutrage\Public\Capacity\Capacities</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Public\Capacity\Capacities\ShoeThrowCapacity.h">
-      <Filter>Source\Pinocchio_sOutrage\Public\Capacity\Capacities</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Public\Capacity\Capacities\SteelBallThrowCapacity.h">
-      <Filter>Source\Pinocchio_sOutrage\Public\Capacity\Capacities</Filter>
-    </ClCompile>
-    <Filter Include="Source\Pinocchio_sOutrage\Public\Character">
-      <UniqueIdentifier>{AD8B068F-5181-3438-A9DA-418D1ED758AC}</UniqueIdentifier>
-    </Filter>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Public\Character\GameCharacter.h">
-      <Filter>Source\Pinocchio_sOutrage\Public\Character</Filter>
-    </ClCompile>
-    <Filter Include="Source\Pinocchio_sOutrage\Public\Character\Characters">
-      <UniqueIdentifier>{A3D571B9-1B1D-3D66-9846-D34A9797A117}</UniqueIdentifier>
-    </Filter>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Public\Character\Characters\ClownCharacter.h">
-      <Filter>Source\Pinocchio_sOutrage\Public\Character\Characters</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Public\Character\Characters\PawnCharacter.h">
-      <Filter>Source\Pinocchio_sOutrage\Public\Character\Characters</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Public\Character\Characters\PinocchioCharacter.h">
-      <Filter>Source\Pinocchio_sOutrage\Public\Character\Characters</Filter>
-    </ClCompile>
-    <Filter Include="Source\Pinocchio_sOutrage\Public\ExternalTools">
-      <UniqueIdentifier>{90D2FE02-14F3-3CC1-862E-C148A96A548A}</UniqueIdentifier>
-    </Filter>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Public\ExternalTools\MessageDebugger.h">
-      <Filter>Source\Pinocchio_sOutrage\Public\ExternalTools</Filter>
-    </ClCompile>
-    <Filter Include="Source\Pinocchio_sOutrage\Public\PlayerInputs">
-      <UniqueIdentifier>{7161C4BD-2019-35C7-86D9-9EEFE103066E}</UniqueIdentifier>
-    </Filter>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Public\PlayerInputs\PlayerInputsManager.h">
-      <Filter>Source\Pinocchio_sOutrage\Public\PlayerInputs</Filter>
-    </ClCompile>
-    <Filter Include="Source\Pinocchio_sOutrage\Public\Statistics">
-      <UniqueIdentifier>{1D02C8D5-4AE2-3C40-A243-1B207C9EDEC2}</UniqueIdentifier>
-    </Filter>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Public\Statistics\CapacityStatisticsDataAsset.h">
-      <Filter>Source\Pinocchio_sOutrage\Public\Statistics</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Public\Statistics\CharacterStatisticsDataAsset.h">
-      <Filter>Source\Pinocchio_sOutrage\Public\Statistics</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Public\Statistics\LevelsStatisticsDataAsset.h">
-      <Filter>Source\Pinocchio_sOutrage\Public\Statistics</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

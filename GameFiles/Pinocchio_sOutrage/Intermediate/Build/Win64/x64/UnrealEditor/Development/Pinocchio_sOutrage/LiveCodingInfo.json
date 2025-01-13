@@ -1,45 +1,5 @@
 {
 	"RemapUnityFiles": 
 	{
-		"Module.Pinocchio_sOutrage.cpp.obj": [
-			"Capacity.gen.cpp.obj",
-			"CapacityStatisticsDataAsset.gen.cpp.obj",
-			"CharacterStatisticsDataAsset.gen.cpp.obj",
-			"CircusDanceCapacity.gen.cpp.obj",
-			"ClownCharacter.gen.cpp.obj",
-			"DodgeCapacity.gen.cpp.obj",
-			"GameCharacter.gen.cpp.obj",
-			"HeadbuttCapacity.gen.cpp.obj",
-			"KickCapacity.gen.cpp.obj",
-			"LevelsStatisticsDataAsset.gen.cpp.obj",
-			"NoseLengtheningCapacity.gen.cpp.obj",
-			"PawnCharacter.gen.cpp.obj",
-			"PinocchioCharacter.gen.cpp.obj",
-			"Pinocchio_sOutrage.init.gen.cpp.obj",
-			"PlayerInputsManager.gen.cpp.obj",
-			"PunchCapacity.gen.cpp.obj",
-			"ShoeThrowCapacity.gen.cpp.obj",
-			"SteelBallThrowCapacity.gen.cpp.obj",
-			"PerModuleInline.gen.cpp.obj",
-			"Pinocchio_sOutrage.cpp.obj",
-			"CircusDanceCapacity.cpp.obj",
-			"DodgeCapacity.cpp.obj",
-			"HeadbuttCapacity.cpp.obj",
-			"KickCapacity.cpp.obj",
-			"NoseLengtheningCapacity.cpp.obj",
-			"PunchCapacity.cpp.obj",
-			"ShoeThrowCapacity.cpp.obj",
-			"SteelBallThrowCapacity.cpp.obj",
-			"Capacity.cpp.obj",
-			"ClownCharacter.cpp.obj",
-			"PawnCharacter.cpp.obj",
-			"PinocchioCharacter.cpp.obj",
-			"GameCharacter.cpp.obj",
-			"MessageDebugger.cpp.obj",
-			"PlayerInputsManager.cpp.obj",
-			"CapacityStatisticsDataAsset.cpp.obj",
-			"CharacterStatisticsDataAsset.cpp.obj",
-			"LevelsStatisticsDataAsset.cpp.obj"
-		]
 	}
 }
