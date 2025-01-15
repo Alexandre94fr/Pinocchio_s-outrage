@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Made by Alexandre RICHARD. GitHub link : https://github.com/Alexandre94fr/
 
 #pragma once
 
@@ -28,6 +28,22 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnUsingSpecialCapacity1);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnUsingSpecialCapacity2);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnUsingSpecialCapacity3);
 #pragma endregion
+
+UENUM(BlueprintType)
+enum class EPlayerActionType : uint8
+{
+    Interact,
+    Move,
+
+    BasicCapacity1,
+    BasicCapacity2,
+    BasicCapacity3,
+    SpecialCapacity1,
+    SpecialCapacity2,
+    SpecialCapacity3,
+
+    Pause
+};
 
 /**
  * 
@@ -107,7 +123,7 @@ protected:
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "ExternalReferences")
     UInputAction* IA_UseSpecialCapacity3;
     #pragma endregion
-
+    
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "ExternalReferences")
     UInputMappingContext* IMC_Default;
     #pragma endregion
@@ -124,6 +140,7 @@ public:
 protected:
 
     // Method called by the Input Actions
+
     void Interact();
 
     void Move(const FInputActionValue& p_inputActionValue);
@@ -137,6 +154,9 @@ protected:
     void UsingSpecialCapacity1();
     void UsingSpecialCapacity2();
     void UsingSpecialCapacity3();
+
+    // Transfert input informations to the controlled character
+    void TriggerAction(const EPlayerActionType p_playerActionType);
 
 private:
 
