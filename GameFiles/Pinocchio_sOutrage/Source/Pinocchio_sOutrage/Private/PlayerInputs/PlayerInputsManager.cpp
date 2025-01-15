@@ -3,11 +3,13 @@
 #include "PlayerInputs/PlayerInputsManager.h"
 
 #include "ExternalTools/MessageDebugger.h"
+#include "GameFramework/Pawn.h"
+#include "GameFramework/Character.h"
+#include <Character/GameCharacter.h>
 
 #include "EnhancedInputComponent.h"
 #include <EnhancedInputSubsystems.h>
-#include "GameFramework/Character.h"
-#include "GameFramework/Pawn.h"
+
 
 void APlayerInputsManager::BeginPlay()
 {
@@ -163,7 +165,7 @@ void APlayerInputsManager::TriggerAction(EPlayerActionType p_playerActionType)
 
 	if (APawn* controlledPawn = GetPawn())
 	{
-		if (ACharacter* controlledCharacter = Cast<ACharacter>(controlledPawn))
+		if (AGameCharacter* controlledGameCharacter = Cast<AGameCharacter>(controlledPawn))
 		{
 			// EXEMPLE CODE
 			//if (IGameCharacterInterface* GameCharacter = Cast<IGameCharacterInterface>(controlledCharacter))
@@ -172,6 +174,4 @@ void APlayerInputsManager::TriggerAction(EPlayerActionType p_playerActionType)
 			//}
 		}
 	}
-
-
 }

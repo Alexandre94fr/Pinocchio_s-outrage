@@ -30,7 +30,7 @@ protected:
 	virtual void BeginPlay() override;
 
 	virtual bool IsClassPropertiesCorrectlySetted();
-
+	
 	virtual void StartCapacity();
 
 private:
