@@ -19,7 +19,7 @@ private: \
 	static void StaticRegisterNativesAPunchCapacity(); \
 	friend struct Z_Construct_UClass_APunchCapacity_Statics; \
 public: \
-	DECLARE_CLASS(APunchCapacity, ACapacity, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Pinocchio_sOutrage"), NO_API) \
+	DECLARE_CLASS(APunchCapacity, ACapacity, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Config), CASTCLASS_None, TEXT("/Script/Pinocchio_sOutrage"), NO_API) \
 	DECLARE_SERIALIZER(APunchCapacity)
 
 
@@ -33,7 +33,7 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, APunchCapacity); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(APunchCapacity); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(APunchCapacity) \
+	DEFINE_ABSTRACT_DEFAULT_CONSTRUCTOR_CALL(APunchCapacity) \
 	NO_API virtual ~APunchCapacity();
 
 

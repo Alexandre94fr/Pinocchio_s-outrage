@@ -27,6 +27,9 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
+    <None Include="..\..\Config\DefaultGameplayTags.ini">
+      <Filter>Config</Filter>
+    </None>
     <None Include="..\..\Config\DefaultInput.ini">
       <Filter>Config</Filter>
     </None>
@@ -90,6 +93,12 @@
     <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Private\Character\GameCharacter.cpp">
       <Filter>Source\Pinocchio_sOutrage\Private\Character</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Private\Character\GameCharacterManager.cpp">
+      <Filter>Source\Pinocchio_sOutrage\Private\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Private\Character\IGameCharacterInterface.cpp">
+      <Filter>Source\Pinocchio_sOutrage\Private\Character</Filter>
+    </ClCompile>
     <Filter Include="Source\Pinocchio_sOutrage\Private\Character\Characters">
       <UniqueIdentifier>{3A333084-EB5C-301F-9FE3-9261F1D4AEE1}</UniqueIdentifier>
     </Filter>
@@ -107,6 +116,18 @@
     </Filter>
     <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Private\ExternalTools\MessageDebugger.cpp">
       <Filter>Source\Pinocchio_sOutrage\Private\ExternalTools</Filter>
+    </ClCompile>
+    <Filter Include="Source\Pinocchio_sOutrage\Private\GameModes">
+      <UniqueIdentifier>{B1146513-33E9-3B64-8963-4190A39C4B75}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Private\GameModes\InLevelGameMode.cpp">
+      <Filter>Source\Pinocchio_sOutrage\Private\GameModes</Filter>
+    </ClCompile>
+    <Filter Include="Source\Pinocchio_sOutrage\Private\Level">
+      <UniqueIdentifier>{CBDEA262-C0A3-3036-ABCD-8BF024598C2C}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Private\Level\LevelManager.cpp">
+      <Filter>Source\Pinocchio_sOutrage\Private\Level</Filter>
     </ClCompile>
     <Filter Include="Source\Pinocchio_sOutrage\Private\PlayerInputs">
       <UniqueIdentifier>{22FE5198-2FF5-34E0-A5E1-8BD2460A5C22}</UniqueIdentifier>
@@ -168,6 +189,15 @@
     <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Public\Character\GameCharacter.h">
       <Filter>Source\Pinocchio_sOutrage\Public\Character</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Public\Character\GameCharacterEnum.h">
+      <Filter>Source\Pinocchio_sOutrage\Public\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Public\Character\GameCharacterManager.h">
+      <Filter>Source\Pinocchio_sOutrage\Public\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Public\Character\IGameCharacterInterface.h">
+      <Filter>Source\Pinocchio_sOutrage\Public\Character</Filter>
+    </ClCompile>
     <Filter Include="Source\Pinocchio_sOutrage\Public\Character\Characters">
       <UniqueIdentifier>{A3D571B9-1B1D-3D66-9846-D34A9797A117}</UniqueIdentifier>
     </Filter>
@@ -185,6 +215,18 @@
     </Filter>
     <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Public\ExternalTools\MessageDebugger.h">
       <Filter>Source\Pinocchio_sOutrage\Public\ExternalTools</Filter>
+    </ClCompile>
+    <Filter Include="Source\Pinocchio_sOutrage\Public\GameModes">
+      <UniqueIdentifier>{9FFEAFCA-2F87-326C-B24E-36A2A10FD848}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Public\GameModes\InLevelGameMode.h">
+      <Filter>Source\Pinocchio_sOutrage\Public\GameModes</Filter>
+    </ClCompile>
+    <Filter Include="Source\Pinocchio_sOutrage\Public\Level">
+      <UniqueIdentifier>{4CA624CB-BDF0-3E4E-8337-730F32027D9C}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Pinocchio_sOutrage\Public\Level\LevelManager.h">
+      <Filter>Source\Pinocchio_sOutrage\Public\Level</Filter>
     </ClCompile>
     <Filter Include="Source\Pinocchio_sOutrage\Public\PlayerInputs">
       <UniqueIdentifier>{7161C4BD-2019-35C7-86D9-9EEFE103066E}</UniqueIdentifier>

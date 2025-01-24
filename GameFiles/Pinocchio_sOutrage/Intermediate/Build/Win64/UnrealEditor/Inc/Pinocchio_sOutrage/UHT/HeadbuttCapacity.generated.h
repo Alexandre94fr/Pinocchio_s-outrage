@@ -19,7 +19,7 @@ private: \
 	static void StaticRegisterNativesAHeadbuttCapacity(); \
 	friend struct Z_Construct_UClass_AHeadbuttCapacity_Statics; \
 public: \
-	DECLARE_CLASS(AHeadbuttCapacity, ACapacity, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Pinocchio_sOutrage"), NO_API) \
+	DECLARE_CLASS(AHeadbuttCapacity, ACapacity, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Config), CASTCLASS_None, TEXT("/Script/Pinocchio_sOutrage"), NO_API) \
 	DECLARE_SERIALIZER(AHeadbuttCapacity)
 
 
@@ -33,7 +33,7 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AHeadbuttCapacity); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AHeadbuttCapacity); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AHeadbuttCapacity) \
+	DEFINE_ABSTRACT_DEFAULT_CONSTRUCTOR_CALL(AHeadbuttCapacity) \
 	NO_API virtual ~AHeadbuttCapacity();
 
 

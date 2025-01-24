@@ -19,7 +19,7 @@ private: \
 	static void StaticRegisterNativesACircusDanceCapacity(); \
 	friend struct Z_Construct_UClass_ACircusDanceCapacity_Statics; \
 public: \
-	DECLARE_CLASS(ACircusDanceCapacity, ACapacity, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Pinocchio_sOutrage"), NO_API) \
+	DECLARE_CLASS(ACircusDanceCapacity, ACapacity, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Config), CASTCLASS_None, TEXT("/Script/Pinocchio_sOutrage"), NO_API) \
 	DECLARE_SERIALIZER(ACircusDanceCapacity)
 
 
@@ -33,7 +33,7 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ACircusDanceCapacity); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACircusDanceCapacity); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ACircusDanceCapacity) \
+	DEFINE_ABSTRACT_DEFAULT_CONSTRUCTOR_CALL(ACircusDanceCapacity) \
 	NO_API virtual ~ACircusDanceCapacity();
 
 

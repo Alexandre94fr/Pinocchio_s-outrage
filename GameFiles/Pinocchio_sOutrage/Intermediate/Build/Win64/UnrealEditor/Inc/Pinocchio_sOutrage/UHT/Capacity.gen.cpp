@@ -30,9 +30,7 @@ struct Z_Construct_UClass_ACapacity_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
-		{ "BlueprintType", "true" },
 		{ "IncludePath", "Capacity/Capacity.h" },
-		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/Capacity/Capacity.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CapacityStatisticsDataAsset_MetaData[] = {
@@ -70,7 +68,7 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_ACapacity_Statics::Clas
 	0,
 	UE_ARRAY_COUNT(Z_Construct_UClass_ACapacity_Statics::PropPointers),
 	0,
-	0x009000A4u,
+	0x009000A5u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ACapacity_Statics::Class_MetaDataParams), Z_Construct_UClass_ACapacity_Statics::Class_MetaDataParams)
 };
 UClass* Z_Construct_UClass_ACapacity()
@@ -93,10 +91,10 @@ ACapacity::~ACapacity() {}
 struct Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_Capacity_Capacity_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ACapacity, ACapacity::StaticClass, TEXT("ACapacity"), &Z_Registration_Info_UClass_ACapacity, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACapacity), 3034464955U) },
+		{ Z_Construct_UClass_ACapacity, ACapacity::StaticClass, TEXT("ACapacity"), &Z_Registration_Info_UClass_ACapacity, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACapacity), 2924466598U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_Capacity_Capacity_h_969243983(TEXT("/Script/Pinocchio_sOutrage"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_Capacity_Capacity_h_3410252399(TEXT("/Script/Pinocchio_sOutrage"),
 	Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_Capacity_Capacity_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_Capacity_Capacity_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

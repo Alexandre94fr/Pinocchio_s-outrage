@@ -19,7 +19,7 @@ private: \
 	static void StaticRegisterNativesANoseLengtheningCapacity(); \
 	friend struct Z_Construct_UClass_ANoseLengtheningCapacity_Statics; \
 public: \
-	DECLARE_CLASS(ANoseLengtheningCapacity, ACapacity, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Pinocchio_sOutrage"), NO_API) \
+	DECLARE_CLASS(ANoseLengtheningCapacity, ACapacity, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Config), CASTCLASS_None, TEXT("/Script/Pinocchio_sOutrage"), NO_API) \
 	DECLARE_SERIALIZER(ANoseLengtheningCapacity)
 
 
@@ -33,7 +33,7 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ANoseLengtheningCapacity); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ANoseLengtheningCapacity); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ANoseLengtheningCapacity) \
+	DEFINE_ABSTRACT_DEFAULT_CONSTRUCTOR_CALL(ANoseLengtheningCapacity) \
 	NO_API virtual ~ANoseLengtheningCapacity();
 
 

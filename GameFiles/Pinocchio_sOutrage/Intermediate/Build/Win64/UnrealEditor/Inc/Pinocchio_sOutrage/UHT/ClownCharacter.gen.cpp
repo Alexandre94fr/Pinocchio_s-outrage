@@ -60,7 +60,7 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_AClownCharacter_Statics
 	0,
 	0,
 	0,
-	0x009000A4u,
+	0x009000A5u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AClownCharacter_Statics::Class_MetaDataParams), Z_Construct_UClass_AClownCharacter_Statics::Class_MetaDataParams)
 };
 UClass* Z_Construct_UClass_AClownCharacter()
@@ -84,10 +84,10 @@ AClownCharacter::~AClownCharacter() {}
 struct Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_Character_Characters_ClownCharacter_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AClownCharacter, AClownCharacter::StaticClass, TEXT("AClownCharacter"), &Z_Registration_Info_UClass_AClownCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AClownCharacter), 3391634867U) },
+		{ Z_Construct_UClass_AClownCharacter, AClownCharacter::StaticClass, TEXT("AClownCharacter"), &Z_Registration_Info_UClass_AClownCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AClownCharacter), 395701624U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_Character_Characters_ClownCharacter_h_1701139866(TEXT("/Script/Pinocchio_sOutrage"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_Character_Characters_ClownCharacter_h_3561517605(TEXT("/Script/Pinocchio_sOutrage"),
 	Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_Character_Characters_ClownCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_Character_Characters_ClownCharacter_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
