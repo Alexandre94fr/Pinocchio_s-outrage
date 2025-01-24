@@ -1,10 +1,7 @@
 // Made by Alexandre RICHARD. GitHub link : https://github.com/Alexandre94fr/
 
-#pragma once
 
-class UInputAction;
-class UEnhancedPlayerInput;
-class UInputMappingContext;
+#pragma once
 
 #include "InputActionValue.h"
 
@@ -12,13 +9,18 @@ class UInputMappingContext;
 #include "GameFramework/PlayerController.h"
 #include "PlayerInputsManager.generated.h"
 
+class UInputAction;
+class UEnhancedPlayerInput;
+class UInputMappingContext;
+class IGameCharacterInterface;
+
 #pragma region Declaring input dynamic multicast delegates
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnInteraction);
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnMovement, FVector2f, p_normalizedDirection);
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnPause);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnTargetEnemy);
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnUsingBasicCapacity1);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnUsingBasicCapacity2);
@@ -27,6 +29,8 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnUsingBasicCapacity3);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnUsingSpecialCapacity1);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnUsingSpecialCapacity2);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnUsingSpecialCapacity3);
+
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnPause);
 #pragma endregion
 
 UENUM(BlueprintType)
@@ -34,6 +38,7 @@ enum class EPlayerActionType : uint8
 {
     Interact,
     Move,
+    TargetEnemy,
 
     BasicCapacity1,
     BasicCapacity2,
@@ -69,7 +74,7 @@ public:
     FOnMovement OnMovementEvent;
 
     UPROPERTY(BlueprintAssignable, Category = "InputEvents")
-    FOnPause OnPauseEvent;
+    FOnTargetEnemy OnTargetEnemy;
 
     UPROPERTY(BlueprintAssignable, Category = "InputEvents")
     FOnUsingBasicCapacity1 OnUsingBasicCapacity1Event;
@@ -88,6 +93,9 @@ public:
 
     UPROPERTY(BlueprintAssignable, Category = "InputEvents")
     FOnUsingSpecialCapacity3 OnUsingSpecialCapacity3Event;
+
+    UPROPERTY(BlueprintAssignable, Category = "InputEvents")
+    FOnPause OnPauseEvent;
     #pragma endregion
 
 protected:
@@ -97,35 +105,38 @@ protected:
     #pragma region Input action
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "ExternalReferences")
-    UInputAction* IA_Interact;
+    TObjectPtr<UInputAction> IA_Interact;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "ExternalReferences")
-    UInputAction* IA_Move;
+    TObjectPtr<UInputAction> IA_Move;
     
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "ExternalReferences")
-    UInputAction* IA_Pause;
+    TObjectPtr<UInputAction> IA_TargetEnemy;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "ExternalReferences")
-    UInputAction* IA_UseBasicCapacity1;
+    TObjectPtr<UInputAction> IA_UseBasicCapacity1;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "ExternalReferences")
-    UInputAction* IA_UseBasicCapacity2;
+    TObjectPtr<UInputAction> IA_UseBasicCapacity2;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "ExternalReferences")
-    UInputAction* IA_UseBasicCapacity3;
+    TObjectPtr<UInputAction> IA_UseBasicCapacity3;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "ExternalReferences")
-    UInputAction* IA_UseSpecialCapacity1;
+    TObjectPtr<UInputAction> IA_UseSpecialCapacity1;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "ExternalReferences")
-    UInputAction* IA_UseSpecialCapacity2;
+    TObjectPtr<UInputAction> IA_UseSpecialCapacity2;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "ExternalReferences")
-    UInputAction* IA_UseSpecialCapacity3;
+    TObjectPtr<UInputAction> IA_UseSpecialCapacity3;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "ExternalReferences")
+    TObjectPtr<UInputAction> IA_Pause;
     #pragma endregion
     
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "ExternalReferences")
-    UInputMappingContext* IMC_Default;
+    TObjectPtr<UInputMappingContext> IMC_Default;
     #pragma endregion
 
 #pragma endregion
@@ -145,7 +156,8 @@ protected:
 
     void Move(const FInputActionValue& p_inputActionValue);
 
-    void Pause();
+    void ChangeTargetedEnemy();
+    void TargetEnemy();
 
     void UsingBasicCapacity1();
     void UsingBasicCapacity2();
@@ -155,11 +167,11 @@ protected:
     void UsingSpecialCapacity2();
     void UsingSpecialCapacity3();
 
-    // Transfert input informations to the controlled character
-    void TriggerAction(const EPlayerActionType p_playerActionType);
+    void Pause();
 
 private:
 
-    bool IsDebuggingOn();
+    bool IsDebuggingOn() const;
+    bool GetControlledIGameCharacter(TScriptInterface<IGameCharacterInterface>& p_iGameCharacter);
 #pragma endregion
 };

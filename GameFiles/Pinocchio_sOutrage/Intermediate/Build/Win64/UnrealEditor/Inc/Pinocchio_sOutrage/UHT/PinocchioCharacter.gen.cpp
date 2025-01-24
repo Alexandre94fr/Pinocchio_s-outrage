@@ -60,7 +60,7 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_APinocchioCharacter_Sta
 	0,
 	0,
 	0,
-	0x009000A4u,
+	0x009000A5u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APinocchioCharacter_Statics::Class_MetaDataParams), Z_Construct_UClass_APinocchioCharacter_Statics::Class_MetaDataParams)
 };
 UClass* Z_Construct_UClass_APinocchioCharacter()
@@ -84,10 +84,10 @@ APinocchioCharacter::~APinocchioCharacter() {}
 struct Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_Character_Characters_PinocchioCharacter_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_APinocchioCharacter, APinocchioCharacter::StaticClass, TEXT("APinocchioCharacter"), &Z_Registration_Info_UClass_APinocchioCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APinocchioCharacter), 2245333091U) },
+		{ Z_Construct_UClass_APinocchioCharacter, APinocchioCharacter::StaticClass, TEXT("APinocchioCharacter"), &Z_Registration_Info_UClass_APinocchioCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APinocchioCharacter), 2218198806U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_Character_Characters_PinocchioCharacter_h_270837297(TEXT("/Script/Pinocchio_sOutrage"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_Character_Characters_PinocchioCharacter_h_3972541368(TEXT("/Script/Pinocchio_sOutrage"),
 	Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_Character_Characters_PinocchioCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_Character_Characters_PinocchioCharacter_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

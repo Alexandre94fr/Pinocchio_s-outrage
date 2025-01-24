@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include <Character/GameCharacter.h>
+#include "CharacterStatisticsDataAsset.h"
 
 #include "CoreMinimal.h"
 #include "Engine/DataAsset.h"
@@ -17,12 +17,13 @@ struct FGameLevel
 	int NumberOfExperienceGaveWhenFinished;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Level informations")
-	TMap<ECharactersEnum, int> EnemyCharactersSpawned;
+	TMap<EGameCharactersEnum, int> EnemyCharactersSpawned;
 
 	// Default constructor
 	FGameLevel()
 	{
-		EnemyCharactersSpawned.Add(ECharactersEnum::Pawn, 1);
+		NumberOfExperienceGaveWhenFinished = 0;
+		EnemyCharactersSpawned.Add(EGameCharactersEnum::Pawn, 1);
 	}
 };
 

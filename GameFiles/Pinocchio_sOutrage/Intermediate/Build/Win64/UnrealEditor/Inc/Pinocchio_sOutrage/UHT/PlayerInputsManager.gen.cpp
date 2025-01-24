@@ -20,6 +20,7 @@ PINOCCHIO_SOUTRAGE_API UEnum* Z_Construct_UEnum_Pinocchio_sOutrage_EPlayerAction
 PINOCCHIO_SOUTRAGE_API UFunction* Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnInteraction__DelegateSignature();
 PINOCCHIO_SOUTRAGE_API UFunction* Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnMovement__DelegateSignature();
 PINOCCHIO_SOUTRAGE_API UFunction* Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnPause__DelegateSignature();
+PINOCCHIO_SOUTRAGE_API UFunction* Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnTargetEnemy__DelegateSignature();
 PINOCCHIO_SOUTRAGE_API UFunction* Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnUsingBasicCapacity1__DelegateSignature();
 PINOCCHIO_SOUTRAGE_API UFunction* Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnUsingBasicCapacity2__DelegateSignature();
 PINOCCHIO_SOUTRAGE_API UFunction* Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnUsingBasicCapacity3__DelegateSignature();
@@ -99,8 +100,8 @@ void FOnMovement_DelegateWrapper(const FMulticastScriptDelegate& OnMovement, FVe
 }
 // End Delegate FOnMovement
 
-// Begin Delegate FOnPause
-struct Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnPause__DelegateSignature_Statics
+// Begin Delegate FOnTargetEnemy
+struct Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnTargetEnemy__DelegateSignature_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
@@ -109,21 +110,21 @@ struct Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnPause__DelegateSignatu
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnPause__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_Pinocchio_sOutrage, nullptr, "OnPause__DelegateSignature", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnPause__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnPause__DelegateSignature_Statics::Function_MetaDataParams) };
-UFunction* Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnPause__DelegateSignature()
+const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnTargetEnemy__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_Pinocchio_sOutrage, nullptr, "OnTargetEnemy__DelegateSignature", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnTargetEnemy__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnTargetEnemy__DelegateSignature_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnTargetEnemy__DelegateSignature()
 {
 	static UFunction* ReturnFunction = nullptr;
 	if (!ReturnFunction)
 	{
-		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnPause__DelegateSignature_Statics::FuncParams);
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnTargetEnemy__DelegateSignature_Statics::FuncParams);
 	}
 	return ReturnFunction;
 }
-void FOnPause_DelegateWrapper(const FMulticastScriptDelegate& OnPause)
+void FOnTargetEnemy_DelegateWrapper(const FMulticastScriptDelegate& OnTargetEnemy)
 {
-	OnPause.ProcessMulticastDelegate<UObject>(NULL);
+	OnTargetEnemy.ProcessMulticastDelegate<UObject>(NULL);
 }
-// End Delegate FOnPause
+// End Delegate FOnTargetEnemy
 
 // Begin Delegate FOnUsingBasicCapacity1
 struct Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnUsingBasicCapacity1__DelegateSignature_Statics
@@ -281,6 +282,32 @@ void FOnUsingSpecialCapacity3_DelegateWrapper(const FMulticastScriptDelegate& On
 }
 // End Delegate FOnUsingSpecialCapacity3
 
+// Begin Delegate FOnPause
+struct Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnPause__DelegateSignature_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/PlayerInputs/PlayerInputsManager.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnPause__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_Pinocchio_sOutrage, nullptr, "OnPause__DelegateSignature", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnPause__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnPause__DelegateSignature_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnPause__DelegateSignature()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnPause__DelegateSignature_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+void FOnPause_DelegateWrapper(const FMulticastScriptDelegate& OnPause)
+{
+	OnPause.ProcessMulticastDelegate<UObject>(NULL);
+}
+// End Delegate FOnPause
+
 // Begin Enum EPlayerActionType
 static FEnumRegistrationInfo Z_Registration_Info_UEnum_EPlayerActionType;
 static UEnum* EPlayerActionType_StaticEnum()
@@ -310,11 +337,13 @@ struct Z_Construct_UEnum_Pinocchio_sOutrage_EPlayerActionType_Statics
 		{ "SpecialCapacity1.Name", "EPlayerActionType::SpecialCapacity1" },
 		{ "SpecialCapacity2.Name", "EPlayerActionType::SpecialCapacity2" },
 		{ "SpecialCapacity3.Name", "EPlayerActionType::SpecialCapacity3" },
+		{ "TargetEnemy.Name", "EPlayerActionType::TargetEnemy" },
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
 		{ "EPlayerActionType::Interact", (int64)EPlayerActionType::Interact },
 		{ "EPlayerActionType::Move", (int64)EPlayerActionType::Move },
+		{ "EPlayerActionType::TargetEnemy", (int64)EPlayerActionType::TargetEnemy },
 		{ "EPlayerActionType::BasicCapacity1", (int64)EPlayerActionType::BasicCapacity1 },
 		{ "EPlayerActionType::BasicCapacity2", (int64)EPlayerActionType::BasicCapacity2 },
 		{ "EPlayerActionType::BasicCapacity3", (int64)EPlayerActionType::BasicCapacity3 },
@@ -379,7 +408,7 @@ struct Z_Construct_UClass_APlayerInputsManager_Statics
 		{ "Category", "InputEvents" },
 		{ "ModuleRelativePath", "Public/PlayerInputs/PlayerInputsManager.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnPauseEvent_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnTargetEnemy_MetaData[] = {
 		{ "Category", "InputEvents" },
 		{ "ModuleRelativePath", "Public/PlayerInputs/PlayerInputsManager.h" },
 	};
@@ -407,6 +436,10 @@ struct Z_Construct_UClass_APlayerInputsManager_Statics
 		{ "Category", "InputEvents" },
 		{ "ModuleRelativePath", "Public/PlayerInputs/PlayerInputsManager.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnPauseEvent_MetaData[] = {
+		{ "Category", "InputEvents" },
+		{ "ModuleRelativePath", "Public/PlayerInputs/PlayerInputsManager.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_IA_Interact_MetaData[] = {
 		{ "Category", "ExternalReferences" },
 		{ "ModuleRelativePath", "Public/PlayerInputs/PlayerInputsManager.h" },
@@ -415,7 +448,7 @@ struct Z_Construct_UClass_APlayerInputsManager_Statics
 		{ "Category", "ExternalReferences" },
 		{ "ModuleRelativePath", "Public/PlayerInputs/PlayerInputsManager.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_IA_Pause_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_IA_TargetEnemy_MetaData[] = {
 		{ "Category", "ExternalReferences" },
 		{ "ModuleRelativePath", "Public/PlayerInputs/PlayerInputsManager.h" },
 	};
@@ -443,6 +476,10 @@ struct Z_Construct_UClass_APlayerInputsManager_Statics
 		{ "Category", "ExternalReferences" },
 		{ "ModuleRelativePath", "Public/PlayerInputs/PlayerInputsManager.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_IA_Pause_MetaData[] = {
+		{ "Category", "ExternalReferences" },
+		{ "ModuleRelativePath", "Public/PlayerInputs/PlayerInputsManager.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_IMC_Default_MetaData[] = {
 		{ "Category", "ExternalReferences" },
 		{ "ModuleRelativePath", "Public/PlayerInputs/PlayerInputsManager.h" },
@@ -452,22 +489,24 @@ struct Z_Construct_UClass_APlayerInputsManager_Statics
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_IsDebuggingInputsOn;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnInteractionEvent;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnMovementEvent;
-	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnPauseEvent;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnTargetEnemy;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnUsingBasicCapacity1Event;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnUsingBasicCapacity2Event;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnUsingBasicCapacity3Event;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnUsingSpecialCapacity1Event;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnUsingSpecialCapacity2Event;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnUsingSpecialCapacity3Event;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnPauseEvent;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_IA_Interact;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_IA_Move;
-	static const UECodeGen_Private::FObjectPropertyParams NewProp_IA_Pause;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_IA_TargetEnemy;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_IA_UseBasicCapacity1;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_IA_UseBasicCapacity2;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_IA_UseBasicCapacity3;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_IA_UseSpecialCapacity1;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_IA_UseSpecialCapacity2;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_IA_UseSpecialCapacity3;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_IA_Pause;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_IMC_Default;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
@@ -483,43 +522,47 @@ void Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IsDebuggingInputsO
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IsDebuggingInputsOn = { "IsDebuggingInputsOn", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(APlayerInputsManager), &Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IsDebuggingInputsOn_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IsDebuggingInputsOn_MetaData), NewProp_IsDebuggingInputsOn_MetaData) };
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_OnInteractionEvent = { "OnInteractionEvent", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, OnInteractionEvent), Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnInteraction__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnInteractionEvent_MetaData), NewProp_OnInteractionEvent_MetaData) }; // 1921757718
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_OnMovementEvent = { "OnMovementEvent", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, OnMovementEvent), Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnMovement__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnMovementEvent_MetaData), NewProp_OnMovementEvent_MetaData) }; // 2860084764
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_OnPauseEvent = { "OnPauseEvent", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, OnPauseEvent), Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnPause__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnPauseEvent_MetaData), NewProp_OnPauseEvent_MetaData) }; // 3298266588
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_OnTargetEnemy = { "OnTargetEnemy", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, OnTargetEnemy), Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnTargetEnemy__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnTargetEnemy_MetaData), NewProp_OnTargetEnemy_MetaData) }; // 1408154415
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_OnUsingBasicCapacity1Event = { "OnUsingBasicCapacity1Event", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, OnUsingBasicCapacity1Event), Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnUsingBasicCapacity1__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnUsingBasicCapacity1Event_MetaData), NewProp_OnUsingBasicCapacity1Event_MetaData) }; // 427123609
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_OnUsingBasicCapacity2Event = { "OnUsingBasicCapacity2Event", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, OnUsingBasicCapacity2Event), Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnUsingBasicCapacity2__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnUsingBasicCapacity2Event_MetaData), NewProp_OnUsingBasicCapacity2Event_MetaData) }; // 179433902
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_OnUsingBasicCapacity3Event = { "OnUsingBasicCapacity3Event", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, OnUsingBasicCapacity3Event), Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnUsingBasicCapacity3__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnUsingBasicCapacity3Event_MetaData), NewProp_OnUsingBasicCapacity3Event_MetaData) }; // 1864924772
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_OnUsingSpecialCapacity1Event = { "OnUsingSpecialCapacity1Event", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, OnUsingSpecialCapacity1Event), Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnUsingSpecialCapacity1__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnUsingSpecialCapacity1Event_MetaData), NewProp_OnUsingSpecialCapacity1Event_MetaData) }; // 3637779841
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_OnUsingSpecialCapacity2Event = { "OnUsingSpecialCapacity2Event", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, OnUsingSpecialCapacity2Event), Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnUsingSpecialCapacity2__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnUsingSpecialCapacity2Event_MetaData), NewProp_OnUsingSpecialCapacity2Event_MetaData) }; // 3223311305
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_OnUsingSpecialCapacity3Event = { "OnUsingSpecialCapacity3Event", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, OnUsingSpecialCapacity3Event), Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnUsingSpecialCapacity3__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnUsingSpecialCapacity3Event_MetaData), NewProp_OnUsingSpecialCapacity3Event_MetaData) }; // 4138314322
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IA_Interact = { "IA_Interact", nullptr, (EPropertyFlags)0x0020080000010015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, IA_Interact), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IA_Interact_MetaData), NewProp_IA_Interact_MetaData) };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IA_Move = { "IA_Move", nullptr, (EPropertyFlags)0x0020080000010015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, IA_Move), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IA_Move_MetaData), NewProp_IA_Move_MetaData) };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IA_Pause = { "IA_Pause", nullptr, (EPropertyFlags)0x0020080000010015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, IA_Pause), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IA_Pause_MetaData), NewProp_IA_Pause_MetaData) };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IA_UseBasicCapacity1 = { "IA_UseBasicCapacity1", nullptr, (EPropertyFlags)0x0020080000010015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, IA_UseBasicCapacity1), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IA_UseBasicCapacity1_MetaData), NewProp_IA_UseBasicCapacity1_MetaData) };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IA_UseBasicCapacity2 = { "IA_UseBasicCapacity2", nullptr, (EPropertyFlags)0x0020080000010015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, IA_UseBasicCapacity2), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IA_UseBasicCapacity2_MetaData), NewProp_IA_UseBasicCapacity2_MetaData) };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IA_UseBasicCapacity3 = { "IA_UseBasicCapacity3", nullptr, (EPropertyFlags)0x0020080000010015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, IA_UseBasicCapacity3), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IA_UseBasicCapacity3_MetaData), NewProp_IA_UseBasicCapacity3_MetaData) };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IA_UseSpecialCapacity1 = { "IA_UseSpecialCapacity1", nullptr, (EPropertyFlags)0x0020080000010015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, IA_UseSpecialCapacity1), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IA_UseSpecialCapacity1_MetaData), NewProp_IA_UseSpecialCapacity1_MetaData) };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IA_UseSpecialCapacity2 = { "IA_UseSpecialCapacity2", nullptr, (EPropertyFlags)0x0020080000010015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, IA_UseSpecialCapacity2), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IA_UseSpecialCapacity2_MetaData), NewProp_IA_UseSpecialCapacity2_MetaData) };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IA_UseSpecialCapacity3 = { "IA_UseSpecialCapacity3", nullptr, (EPropertyFlags)0x0020080000010015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, IA_UseSpecialCapacity3), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IA_UseSpecialCapacity3_MetaData), NewProp_IA_UseSpecialCapacity3_MetaData) };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IMC_Default = { "IMC_Default", nullptr, (EPropertyFlags)0x0020080000010015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, IMC_Default), Z_Construct_UClass_UInputMappingContext_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IMC_Default_MetaData), NewProp_IMC_Default_MetaData) };
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_OnPauseEvent = { "OnPauseEvent", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, OnPauseEvent), Z_Construct_UDelegateFunction_Pinocchio_sOutrage_OnPause__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnPauseEvent_MetaData), NewProp_OnPauseEvent_MetaData) }; // 3298266588
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IA_Interact = { "IA_Interact", nullptr, (EPropertyFlags)0x0124080000010015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, IA_Interact), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IA_Interact_MetaData), NewProp_IA_Interact_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IA_Move = { "IA_Move", nullptr, (EPropertyFlags)0x0124080000010015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, IA_Move), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IA_Move_MetaData), NewProp_IA_Move_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IA_TargetEnemy = { "IA_TargetEnemy", nullptr, (EPropertyFlags)0x0124080000010015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, IA_TargetEnemy), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IA_TargetEnemy_MetaData), NewProp_IA_TargetEnemy_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IA_UseBasicCapacity1 = { "IA_UseBasicCapacity1", nullptr, (EPropertyFlags)0x0124080000010015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, IA_UseBasicCapacity1), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IA_UseBasicCapacity1_MetaData), NewProp_IA_UseBasicCapacity1_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IA_UseBasicCapacity2 = { "IA_UseBasicCapacity2", nullptr, (EPropertyFlags)0x0124080000010015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, IA_UseBasicCapacity2), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IA_UseBasicCapacity2_MetaData), NewProp_IA_UseBasicCapacity2_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IA_UseBasicCapacity3 = { "IA_UseBasicCapacity3", nullptr, (EPropertyFlags)0x0124080000010015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, IA_UseBasicCapacity3), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IA_UseBasicCapacity3_MetaData), NewProp_IA_UseBasicCapacity3_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IA_UseSpecialCapacity1 = { "IA_UseSpecialCapacity1", nullptr, (EPropertyFlags)0x0124080000010015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, IA_UseSpecialCapacity1), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IA_UseSpecialCapacity1_MetaData), NewProp_IA_UseSpecialCapacity1_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IA_UseSpecialCapacity2 = { "IA_UseSpecialCapacity2", nullptr, (EPropertyFlags)0x0124080000010015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, IA_UseSpecialCapacity2), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IA_UseSpecialCapacity2_MetaData), NewProp_IA_UseSpecialCapacity2_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IA_UseSpecialCapacity3 = { "IA_UseSpecialCapacity3", nullptr, (EPropertyFlags)0x0124080000010015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, IA_UseSpecialCapacity3), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IA_UseSpecialCapacity3_MetaData), NewProp_IA_UseSpecialCapacity3_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IA_Pause = { "IA_Pause", nullptr, (EPropertyFlags)0x0124080000010015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, IA_Pause), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IA_Pause_MetaData), NewProp_IA_Pause_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IMC_Default = { "IMC_Default", nullptr, (EPropertyFlags)0x0124080000010015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInputsManager, IMC_Default), Z_Construct_UClass_UInputMappingContext_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IMC_Default_MetaData), NewProp_IMC_Default_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APlayerInputsManager_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IsDebuggingInputsOn,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_OnInteractionEvent,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_OnMovementEvent,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_OnPauseEvent,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_OnTargetEnemy,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_OnUsingBasicCapacity1Event,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_OnUsingBasicCapacity2Event,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_OnUsingBasicCapacity3Event,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_OnUsingSpecialCapacity1Event,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_OnUsingSpecialCapacity2Event,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_OnUsingSpecialCapacity3Event,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_OnPauseEvent,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IA_Interact,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IA_Move,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IA_Pause,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IA_TargetEnemy,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IA_UseBasicCapacity1,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IA_UseBasicCapacity2,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IA_UseBasicCapacity3,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IA_UseSpecialCapacity1,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IA_UseSpecialCapacity2,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IA_UseSpecialCapacity3,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IA_Pause,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerInputsManager_Statics::NewProp_IMC_Default,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_APlayerInputsManager_Statics::PropPointers) < 2048);
@@ -564,13 +607,13 @@ APlayerInputsManager::~APlayerInputsManager() {}
 struct Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_PlayerInputs_PlayerInputsManager_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EPlayerActionType_StaticEnum, TEXT("EPlayerActionType"), &Z_Registration_Info_UEnum_EPlayerActionType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1346979213U) },
+		{ EPlayerActionType_StaticEnum, TEXT("EPlayerActionType"), &Z_Registration_Info_UEnum_EPlayerActionType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3536600841U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_APlayerInputsManager, APlayerInputsManager::StaticClass, TEXT("APlayerInputsManager"), &Z_Registration_Info_UClass_APlayerInputsManager, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APlayerInputsManager), 4195986563U) },
+		{ Z_Construct_UClass_APlayerInputsManager, APlayerInputsManager::StaticClass, TEXT("APlayerInputsManager"), &Z_Registration_Info_UClass_APlayerInputsManager, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APlayerInputsManager), 2993272206U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_PlayerInputs_PlayerInputsManager_h_2652135910(TEXT("/Script/Pinocchio_sOutrage"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_PlayerInputs_PlayerInputsManager_h_3755153906(TEXT("/Script/Pinocchio_sOutrage"),
 	Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_PlayerInputs_PlayerInputsManager_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_PlayerInputs_PlayerInputsManager_h_Statics::ClassInfo),
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_PlayerInputs_PlayerInputsManager_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_PlayerInputs_PlayerInputsManager_h_Statics::EnumInfo));

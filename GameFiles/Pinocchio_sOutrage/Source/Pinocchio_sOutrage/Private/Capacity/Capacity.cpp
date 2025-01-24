@@ -2,7 +2,9 @@
 
 #include "Capacity/Capacity.h"
 
-#include <ExternalTools/MessageDebugger.h>
+#include "Statistics/CapacityStatisticsDataAsset.h"
+
+#include "ExternalTools/MessageDebugger.h"
 
 // Sets default values
 ACapacity::ACapacity()

@@ -1,12 +1,13 @@
 // Made by Alexandre RICHARD. GitHub link : https://github.com/Alexandre94fr/
 
-#pragma once
 
-#include <Statistics/CapacityStatisticsDataAsset.h>
+#pragma once
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "Capacity.generated.h"
+
+class UCapacityStatisticsDataAsset;
 
 UCLASS(Blueprintable)
 class PINOCCHIO_SOUTRAGE_API ACapacity : public AActor

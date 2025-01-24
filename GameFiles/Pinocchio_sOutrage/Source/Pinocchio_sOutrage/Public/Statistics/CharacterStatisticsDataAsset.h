@@ -2,6 +2,8 @@
 
 #pragma once
 
+#include "Character/GameCharacterEnum.h"
+
 #include "CoreMinimal.h"
 #include "Engine/DataAsset.h"
 #include "CharacterStatisticsDataAsset.generated.h"
