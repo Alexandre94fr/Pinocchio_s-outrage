@@ -9,7 +9,7 @@
 
 class UCapacityStatisticsDataAsset;
 
-UCLASS(Blueprintable)
+UCLASS(Abstract)
 class PINOCCHIO_SOUTRAGE_API ACapacity : public AActor
 {
 	GENERATED_BODY()
@@ -20,6 +20,7 @@ protected:
 	TObjectPtr<UCapacityStatisticsDataAsset> CapacityStatisticsDataAsset;
 
 public:	
+
 	// Sets default values for this actor's properties
 	ACapacity();
 
@@ -27,15 +28,12 @@ public:
 	virtual void Tick(float p_deltaTime) override;
 
 protected:
+
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
 	virtual bool IsClassPropertiesCorrectlySetted();
 	
 	virtual void StartCapacity();
-
-private:
-	int _testGoo;
-	void JeSuisUneMethod(int p_aaaaaaaaaa);
 
 };

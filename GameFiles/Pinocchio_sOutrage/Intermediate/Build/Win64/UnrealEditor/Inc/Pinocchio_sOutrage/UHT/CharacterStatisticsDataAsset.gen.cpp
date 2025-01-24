@@ -10,7 +10,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeCharacterStatisticsDataAsset() {}
 
 // Begin Cross Module References
+COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 ENGINE_API UClass* Z_Construct_UClass_UPrimaryDataAsset();
+PINOCCHIO_SOUTRAGE_API UClass* Z_Construct_UClass_ACapacity_NoRegister();
 PINOCCHIO_SOUTRAGE_API UClass* Z_Construct_UClass_UCharacterStatisticsDataAsset();
 PINOCCHIO_SOUTRAGE_API UClass* Z_Construct_UClass_UCharacterStatisticsDataAsset_NoRegister();
 UPackage* Z_Construct_UPackage__Script_Pinocchio_sOutrage();
@@ -58,6 +60,13 @@ struct Z_Construct_UClass_UCharacterStatisticsDataAsset_Statics
 		{ "ModuleRelativePath", "Public/Statistics/CharacterStatisticsDataAsset.h" },
 		{ "Units", "m/s" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LockingEnemyRange_MetaData[] = {
+		{ "Category", "Basic informations" },
+		{ "ClampMax", "100" },
+		{ "ClampMin", "0" },
+		{ "ModuleRelativePath", "Public/Statistics/CharacterStatisticsDataAsset.h" },
+		{ "Units", "m" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ExperiencePointsRequiredForNextLevel_MetaData[] = {
 		{ "Category", "Experience informations" },
 		{ "ClampMin", "0" },
@@ -92,11 +101,12 @@ struct Z_Construct_UClass_UCharacterStatisticsDataAsset_Statics
 	static const UECodeGen_Private::FNamePropertyParams NewProp_Name;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MaxHealthPoint;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MovementSpeed;
+	static const UECodeGen_Private::FIntPropertyParams NewProp_LockingEnemyRange;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_ExperiencePointsRequiredForNextLevel;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_MaxLevel;
-	static const UECodeGen_Private::FBoolPropertyParams NewProp_BasicCapacities_Inner;
+	static const UECodeGen_Private::FClassPropertyParams NewProp_BasicCapacities_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_BasicCapacities;
-	static const UECodeGen_Private::FBoolPropertyParams NewProp_SpecialCapacities_Inner;
+	static const UECodeGen_Private::FClassPropertyParams NewProp_SpecialCapacities_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_SpecialCapacities;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
@@ -108,16 +118,18 @@ struct Z_Construct_UClass_UCharacterStatisticsDataAsset_Statics
 const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_UCharacterStatisticsDataAsset_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCharacterStatisticsDataAsset, Name), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Name_MetaData), NewProp_Name_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UCharacterStatisticsDataAsset_Statics::NewProp_MaxHealthPoint = { "MaxHealthPoint", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCharacterStatisticsDataAsset, MaxHealthPoint), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxHealthPoint_MetaData), NewProp_MaxHealthPoint_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UCharacterStatisticsDataAsset_Statics::NewProp_MovementSpeed = { "MovementSpeed", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCharacterStatisticsDataAsset, MovementSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MovementSpeed_MetaData), NewProp_MovementSpeed_MetaData) };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UCharacterStatisticsDataAsset_Statics::NewProp_LockingEnemyRange = { "LockingEnemyRange", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCharacterStatisticsDataAsset, LockingEnemyRange), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LockingEnemyRange_MetaData), NewProp_LockingEnemyRange_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UCharacterStatisticsDataAsset_Statics::NewProp_ExperiencePointsRequiredForNextLevel = { "ExperiencePointsRequiredForNextLevel", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCharacterStatisticsDataAsset, ExperiencePointsRequiredForNextLevel), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ExperiencePointsRequiredForNextLevel_MetaData), NewProp_ExperiencePointsRequiredForNextLevel_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UCharacterStatisticsDataAsset_Statics::NewProp_MaxLevel = { "MaxLevel", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCharacterStatisticsDataAsset, MaxLevel), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxLevel_MetaData), NewProp_MaxLevel_MetaData) };
-const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UCharacterStatisticsDataAsset_Statics::NewProp_BasicCapacities_Inner = { "BasicCapacities", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UCharacterStatisticsDataAsset_Statics::NewProp_BasicCapacities = { "BasicCapacities", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCharacterStatisticsDataAsset, BasicCapacities), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_BasicCapacities_MetaData), NewProp_BasicCapacities_MetaData) };
-const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UCharacterStatisticsDataAsset_Statics::NewProp_SpecialCapacities_Inner = { "SpecialCapacities", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UCharacterStatisticsDataAsset_Statics::NewProp_SpecialCapacities = { "SpecialCapacities", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCharacterStatisticsDataAsset, SpecialCapacities), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpecialCapacities_MetaData), NewProp_SpecialCapacities_MetaData) };
+const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_UCharacterStatisticsDataAsset_Statics::NewProp_BasicCapacities_Inner = { "BasicCapacities", nullptr, (EPropertyFlags)0x0004000000000000, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UClass, Z_Construct_UClass_ACapacity_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UCharacterStatisticsDataAsset_Statics::NewProp_BasicCapacities = { "BasicCapacities", nullptr, (EPropertyFlags)0x0014000000010001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCharacterStatisticsDataAsset, BasicCapacities), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_BasicCapacities_MetaData), NewProp_BasicCapacities_MetaData) };
+const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_UCharacterStatisticsDataAsset_Statics::NewProp_SpecialCapacities_Inner = { "SpecialCapacities", nullptr, (EPropertyFlags)0x0004000000000000, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UClass, Z_Construct_UClass_ACapacity_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UCharacterStatisticsDataAsset_Statics::NewProp_SpecialCapacities = { "SpecialCapacities", nullptr, (EPropertyFlags)0x0014000000010001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCharacterStatisticsDataAsset, SpecialCapacities), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpecialCapacities_MetaData), NewProp_SpecialCapacities_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UCharacterStatisticsDataAsset_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterStatisticsDataAsset_Statics::NewProp_Name,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterStatisticsDataAsset_Statics::NewProp_MaxHealthPoint,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterStatisticsDataAsset_Statics::NewProp_MovementSpeed,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterStatisticsDataAsset_Statics::NewProp_LockingEnemyRange,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterStatisticsDataAsset_Statics::NewProp_ExperiencePointsRequiredForNextLevel,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterStatisticsDataAsset_Statics::NewProp_MaxLevel,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterStatisticsDataAsset_Statics::NewProp_BasicCapacities_Inner,
@@ -167,10 +179,10 @@ UCharacterStatisticsDataAsset::~UCharacterStatisticsDataAsset() {}
 struct Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_Statistics_CharacterStatisticsDataAsset_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UCharacterStatisticsDataAsset, UCharacterStatisticsDataAsset::StaticClass, TEXT("UCharacterStatisticsDataAsset"), &Z_Registration_Info_UClass_UCharacterStatisticsDataAsset, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCharacterStatisticsDataAsset), 816867242U) },
+		{ Z_Construct_UClass_UCharacterStatisticsDataAsset, UCharacterStatisticsDataAsset::StaticClass, TEXT("UCharacterStatisticsDataAsset"), &Z_Registration_Info_UClass_UCharacterStatisticsDataAsset, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCharacterStatisticsDataAsset), 1512275084U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_Statistics_CharacterStatisticsDataAsset_h_527039075(TEXT("/Script/Pinocchio_sOutrage"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_Statistics_CharacterStatisticsDataAsset_h_1268823156(TEXT("/Script/Pinocchio_sOutrage"),
 	Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_Statistics_CharacterStatisticsDataAsset_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_Statistics_CharacterStatisticsDataAsset_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

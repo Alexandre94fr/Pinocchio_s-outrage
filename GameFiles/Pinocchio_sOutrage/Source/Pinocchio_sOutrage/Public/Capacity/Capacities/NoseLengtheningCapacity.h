@@ -9,7 +9,7 @@
 /**
  * 
  */
-UCLASS()
+UCLASS(Abstract)
 class PINOCCHIO_SOUTRAGE_API ANoseLengtheningCapacity : public ACapacity
 {
 	GENERATED_BODY()

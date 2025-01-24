@@ -22,6 +22,8 @@ void ACapacity::BeginPlay()
 		return;
 }
 
+// TESTING NAMMING CONVENTION MODIFICATION BELOW (I will let that here in case)
+
 // Called every frame
 void ACapacity::Tick(float p_deltaTime) // Visual Studio détecte un non respect des conventions de nommage (il veut transformer p_deltaTime -> pDeltaTime)
 {
@@ -46,7 +48,7 @@ bool ACapacity::IsClassPropertiesCorrectlySetted()
 		isCorrectlySetted = false;
 		MessageDebugger::ErrorOnScreen(-1, "The 'CapacityStatisticsDataAsset' variable is null.");
 	}
-	StartCapacity(); // TEMPORARY
+	
 	return isCorrectlySetted;
 }
 

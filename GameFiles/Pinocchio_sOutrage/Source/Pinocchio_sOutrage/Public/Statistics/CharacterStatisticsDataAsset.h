@@ -3,10 +3,12 @@
 #pragma once
 
 #include "Character/GameCharacterEnum.h"
+#include "Capacity/Capacity.h"
 
 #include "CoreMinimal.h"
 #include "Engine/DataAsset.h"
 #include "CharacterStatisticsDataAsset.generated.h"
+
 
 /**
  * 
@@ -28,10 +30,13 @@ public:
 	//float CurrentHealthPoint;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Basic informations", meta = (ClampMin = 0, ClampMax = 150))
-	float MaxHealthPoint;
+	float MaxHealthPoint	= 50;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Basic informations", meta = (ClampMin = 0, ClampMax = 2, Units = "m/s"))
-	float MovementSpeed;
+	float MovementSpeed		= 1;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Basic informations", meta = (ClampMin = 0, ClampMax = 100, Units = "m"))
+	int LockingEnemyRange	= 10;
 #pragma endregion
 
 #pragma region Experience informations
@@ -41,14 +46,14 @@ public:
 	//int CurrentExperiencePoints;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Experience informations", meta = (ClampMin = 0))
-	int ExperiencePointsRequiredForNextLevel;
+	int ExperiencePointsRequiredForNextLevel	= 100;
 
 	// TODO : Remove when this property is copy paste into Character class
 	//UPROPERTY(EditDefaultsOnly, Category = "Experience informations", meta = (ClampMin = 0))
 	//int CurrentLevel;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Experience informations", meta = (ClampMin = 0))
-	int MaxLevel;
+	int MaxLevel								= 5;
 
 	// TODO : Remove when this property is copy paste into Character class
 	//UPROPERTY(EditDefaultsOnly, Category = "Experience informations", meta = (ClampMin = 0))
@@ -58,9 +63,9 @@ public:
 #pragma region Capacity informations
 
 	UPROPERTY(EditDefaultsOnly, Category = "Capacity informations")
-	TArray<bool> BasicCapacities;
+	TArray<TSubclassOf<ACapacity>> BasicCapacities;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Capacity informations")
-	TArray<bool> SpecialCapacities;
+	TArray<TSubclassOf<ACapacity>> SpecialCapacities;
 #pragma endregion
 };

@@ -19,7 +19,7 @@ private: \
 	static void StaticRegisterNativesADodgeCapacity(); \
 	friend struct Z_Construct_UClass_ADodgeCapacity_Statics; \
 public: \
-	DECLARE_CLASS(ADodgeCapacity, ACapacity, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Pinocchio_sOutrage"), NO_API) \
+	DECLARE_CLASS(ADodgeCapacity, ACapacity, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Config), CASTCLASS_None, TEXT("/Script/Pinocchio_sOutrage"), NO_API) \
 	DECLARE_SERIALIZER(ADodgeCapacity)
 
 
@@ -33,7 +33,7 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ADodgeCapacity); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ADodgeCapacity); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ADodgeCapacity) \
+	DEFINE_ABSTRACT_DEFAULT_CONSTRUCTOR_CALL(ADodgeCapacity) \
 	NO_API virtual ~ADodgeCapacity();
 
 

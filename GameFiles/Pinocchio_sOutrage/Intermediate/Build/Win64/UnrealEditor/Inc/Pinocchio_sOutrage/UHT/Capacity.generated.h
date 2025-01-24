@@ -19,7 +19,7 @@ private: \
 	static void StaticRegisterNativesACapacity(); \
 	friend struct Z_Construct_UClass_ACapacity_Statics; \
 public: \
-	DECLARE_CLASS(ACapacity, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Pinocchio_sOutrage"), NO_API) \
+	DECLARE_CLASS(ACapacity, AActor, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Config), CASTCLASS_None, TEXT("/Script/Pinocchio_sOutrage"), NO_API) \
 	DECLARE_SERIALIZER(ACapacity)
 
 
@@ -31,7 +31,7 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ACapacity); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACapacity); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ACapacity) \
+	DEFINE_ABSTRACT_DEFAULT_CONSTRUCTOR_CALL(ACapacity) \
 	NO_API virtual ~ACapacity();
 
 

@@ -19,7 +19,7 @@ private: \
 	static void StaticRegisterNativesASteelBallThrowCapacity(); \
 	friend struct Z_Construct_UClass_ASteelBallThrowCapacity_Statics; \
 public: \
-	DECLARE_CLASS(ASteelBallThrowCapacity, ACapacity, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Pinocchio_sOutrage"), NO_API) \
+	DECLARE_CLASS(ASteelBallThrowCapacity, ACapacity, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Config), CASTCLASS_None, TEXT("/Script/Pinocchio_sOutrage"), NO_API) \
 	DECLARE_SERIALIZER(ASteelBallThrowCapacity)
 
 
@@ -33,7 +33,7 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ASteelBallThrowCapacity); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASteelBallThrowCapacity); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ASteelBallThrowCapacity) \
+	DEFINE_ABSTRACT_DEFAULT_CONSTRUCTOR_CALL(ASteelBallThrowCapacity) \
 	NO_API virtual ~ASteelBallThrowCapacity();
 
 

@@ -180,7 +180,7 @@ TObjectPtr<AGameCharacter> AGameCharacter::GetClosestEnemyGameCharacter()
 
 	FVector actualGameCharacterLocation = GetActorLocation();
 
-	float minimalDistance = 999999; // TODO : Replace this with a value in the CharacterDataAsset nammed TragetingEnemyRange (you will need to create one first)
+	float minimalDistance = CharacterStatistics->LockingEnemyRange * 100; // We multiply by 100 because we convert meters into centimeters (because Unreal uses centimeters)
 
 	// Getting the correct list of Characters to check
 	TArray<TObjectPtr<AGameCharacter>>* charactersToCheck = nullptr;
@@ -217,6 +217,14 @@ TObjectPtr<AGameCharacter> AGameCharacter::GetClosestEnemyGameCharacter()
 		otherGameCharacterLocation = otherGameCharacter->GetActorLocation();
 
 		float currentDistance = FVector::Distance(otherGameCharacterLocation, GetActorLocation());
+
+		if (IsDebugModeEnable())
+		{
+			MessageDebugger::CustomMessageOnScreen(-1, FString::Printf(TEXT("Current distance : %.2f cm VS %.2f cm : Minimal distance"),
+				currentDistance, minimalDistance),
+				FColor::Blue
+			);
+		}
 
 		if (currentDistance > minimalDistance)
 			continue;

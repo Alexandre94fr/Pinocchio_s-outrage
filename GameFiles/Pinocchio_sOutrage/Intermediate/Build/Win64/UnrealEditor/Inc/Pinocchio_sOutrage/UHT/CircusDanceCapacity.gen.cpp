@@ -59,7 +59,7 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_ACircusDanceCapacity_St
 	0,
 	0,
 	0,
-	0x009000A4u,
+	0x009000A5u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ACircusDanceCapacity_Statics::Class_MetaDataParams), Z_Construct_UClass_ACircusDanceCapacity_Statics::Class_MetaDataParams)
 };
 UClass* Z_Construct_UClass_ACircusDanceCapacity()
@@ -83,10 +83,10 @@ ACircusDanceCapacity::~ACircusDanceCapacity() {}
 struct Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_Capacity_Capacities_CircusDanceCapacity_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ACircusDanceCapacity, ACircusDanceCapacity::StaticClass, TEXT("ACircusDanceCapacity"), &Z_Registration_Info_UClass_ACircusDanceCapacity, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACircusDanceCapacity), 1528507671U) },
+		{ Z_Construct_UClass_ACircusDanceCapacity, ACircusDanceCapacity::StaticClass, TEXT("ACircusDanceCapacity"), &Z_Registration_Info_UClass_ACircusDanceCapacity, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACircusDanceCapacity), 230314475U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_Capacity_Capacities_CircusDanceCapacity_h_490877595(TEXT("/Script/Pinocchio_sOutrage"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_Capacity_Capacities_CircusDanceCapacity_h_2832935525(TEXT("/Script/Pinocchio_sOutrage"),
 	Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_Capacity_Capacities_CircusDanceCapacity_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Mes_jeux_Unreal__GitHub_Pinocchio_s_outrage_GameFiles_Pinocchio_sOutrage_Source_Pinocchio_sOutrage_Public_Capacity_Capacities_CircusDanceCapacity_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

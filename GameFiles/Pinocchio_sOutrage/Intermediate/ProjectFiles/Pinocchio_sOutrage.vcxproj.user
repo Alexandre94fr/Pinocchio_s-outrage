@@ -31,9 +31,8 @@
     <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Editor|x64'">
-    <LocalDebuggerCommandArguments>"C:\Mes jeux\Unreal\_GitHub\Pinocchio_s-outrage\GameFiles\Pinocchio_sOutrage\Pinocchio_sOutrage.uproject" -skipcompile</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>"$(SolutionDir)Pinocchio_sOutrage.uproject" -skipcompile</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-    <RemoteDebuggerCommandArguments>"C:\Mes jeux\Unreal\_GitHub\Pinocchio_s-outrage\GameFiles\Pinocchio_sOutrage\Pinocchio_sOutrage.uproject" -skipcompile</RemoteDebuggerCommandArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win64_arm64_Development_Editor|x64'">
     <RemoteDebuggerCommandArguments>"$(SolutionDir)Pinocchio_sOutrage.uproject" -skipcompile</RemoteDebuggerCommandArguments>

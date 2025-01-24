@@ -19,7 +19,7 @@ private: \
 	static void StaticRegisterNativesAShoeThrowCapacity(); \
 	friend struct Z_Construct_UClass_AShoeThrowCapacity_Statics; \
 public: \
-	DECLARE_CLASS(AShoeThrowCapacity, ACapacity, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Pinocchio_sOutrage"), NO_API) \
+	DECLARE_CLASS(AShoeThrowCapacity, ACapacity, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Config), CASTCLASS_None, TEXT("/Script/Pinocchio_sOutrage"), NO_API) \
 	DECLARE_SERIALIZER(AShoeThrowCapacity)
 
 
@@ -33,7 +33,7 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AShoeThrowCapacity); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AShoeThrowCapacity); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AShoeThrowCapacity) \
+	DEFINE_ABSTRACT_DEFAULT_CONSTRUCTOR_CALL(AShoeThrowCapacity) \
 	NO_API virtual ~AShoeThrowCapacity();
 
 
