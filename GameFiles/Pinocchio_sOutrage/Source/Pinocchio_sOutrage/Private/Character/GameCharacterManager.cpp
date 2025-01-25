@@ -99,7 +99,9 @@ void AGameCharacterManager::InstantiateGameCharacter(EGameCharactersEnum p_gameC
     }
 
     InstantiatedCharacters.Add(spawnedCharacter);
+#if WITH_EDITOR
     spawnedCharacter->SetFolderPath(CharactersInstantiatedFolderPath);
+#endif
 
     // Handling new player character management
     if (p_isNewPlayerCharacter) 
