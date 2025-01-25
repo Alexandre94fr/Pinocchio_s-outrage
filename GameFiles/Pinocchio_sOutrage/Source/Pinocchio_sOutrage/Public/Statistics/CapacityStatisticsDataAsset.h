@@ -75,7 +75,7 @@ public:
 	bool SecondCapacityEffectWhenFailed; // Function
 #pragma endregion
 
-private:
-
-	void PostEditChangeProperty(FPropertyChangedEvent& p_propertyChangedEvent);
+//private:
+//
+//	void PostEditChangeProperty(FPropertyChangedEvent& p_propertyChangedEvent);
 };
