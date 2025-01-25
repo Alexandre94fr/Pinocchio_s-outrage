@@ -1,0 +1,17 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\mes jeux\\unreal\\_github\\pinocchio_s-outrage\\gamefiles\\pinocchio_soutrage\\source\\pinocchio_soutrage\\private\\capacity\\capacities\\shoethrowcapacity.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\mes jeux\\unreal\\_github\\pinocchio_s-outrage\\gamefiles\\pinocchio_soutrage\\intermediate\\build\\win64\\x64\\pinocchio_soutrage\\debuggame\\engine\\sharedpch.engine.project.nonoptimized.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\mes jeux\\unreal\\_github\\pinocchio_s-outrage\\gamefiles\\pinocchio_soutrage\\intermediate\\build\\win64\\x64\\unrealgame\\debuggame\\pinocchio_soutrage\\definitions.pinocchio_soutrage.h",
+            "c:\\mes jeux\\unreal\\_github\\pinocchio_s-outrage\\gamefiles\\pinocchio_soutrage\\source\\pinocchio_soutrage\\public\\capacity\\capacities\\shoethrowcapacity.h",
+            "c:\\mes jeux\\unreal\\_github\\pinocchio_s-outrage\\gamefiles\\pinocchio_soutrage\\source\\pinocchio_soutrage\\public\\capacity\\capacity.h",
+            "c:\\mes jeux\\unreal\\_github\\pinocchio_s-outrage\\gamefiles\\pinocchio_soutrage\\intermediate\\build\\win64\\unrealgame\\inc\\pinocchio_soutrage\\uht\\capacity.generated.h",
+            "c:\\mes jeux\\unreal\\_github\\pinocchio_s-outrage\\gamefiles\\pinocchio_soutrage\\intermediate\\build\\win64\\unrealgame\\inc\\pinocchio_soutrage\\uht\\shoethrowcapacity.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
