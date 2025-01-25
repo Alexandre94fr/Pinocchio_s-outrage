@@ -1,0 +1,49 @@
+Note de GameDesign - Pinocchio's outrage - Alexandre RICHARD
+------------------------------------------------------------
+
+Concept quête 2 :
+
+Personnage principale : Pinocchio (en équivalent)
+Ennemies = Personnage en bois
+
+Temporalité + Lieu : Dans l'Italie de la fin du XIXe siècle
+
+Combat de personnage en bois clandestin dans une arène.
+
+Statistiques d'une capacité :
+- Nom (string)
+- Dégâts (float)
+- Portée (float)
+- Durée de chargement (float)
+- Durée de stun (float)
+- Durée de cooldown si l'attaque réussi (float)
+- Durée de cooldown si l'attaque échoue (float)
+- Effet de la capacité (function)
+- Effet secondaire lorsque l'attaque réussi (function)
+- Effet secondaire lorsque l'attaque échoue (function)
+
+|Statistiques annexes (pas utilisé par le code)|
+- Touche de lancement de la capacité (key)
+
+Capacité basique de Pinocchio :
+- Coup de poing
+- Coup de pied
+- Esquive directionnel (tourne rapidement sur lui même), dans un petit temps d'invincibilité au lancement 
+
+Capacité spécial Pinocchio :
+- Allongement du nez (dégâts moyen, attaque à moyenne distance, gros stun, chargement d'attaque court, cooldown plutôt grand, )
+- Lancer sa chaussure (dégâts léger, attaque longue distance, petit stun, chargement d'attaque court, cooldown très cours, attention le joueur devra la/les récupérer après, il peut lancer ses deux chaussures si il le souhaite)
+
+Chaque passage de niveau redonne 10 PV au personnage du joueur
+
+MVP : 
+- Avoir les inputs fonctionnels
+- Avoir la caméra en vu de dessus fonctionnelle (vu isométrique)
+- Avoir le personnage principal complètement fonctionnel (contrôles, stats, attaques classique, attaques spéciales, mort)
+- Avoir 1 ennemies parfaitement fonctionnels (stats, attaques, IA)
+- Avoir le système de niveau 
+- Avoir un système de début et de fin de partie (lorsque Pinocchio meure)
+
+Grosse mécanique de gameplay de Diablo 2 :
+
+Système statistique de point de vie, mana, 

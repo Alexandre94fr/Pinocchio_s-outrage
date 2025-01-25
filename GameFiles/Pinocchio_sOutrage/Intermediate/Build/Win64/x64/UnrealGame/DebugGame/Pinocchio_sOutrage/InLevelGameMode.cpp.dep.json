@@ -1,0 +1,26 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\mes jeux\\unreal\\_github\\pinocchio_s-outrage\\gamefiles\\pinocchio_soutrage\\source\\pinocchio_soutrage\\private\\gamemodes\\inlevelgamemode.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\mes jeux\\unreal\\_github\\pinocchio_s-outrage\\gamefiles\\pinocchio_soutrage\\intermediate\\build\\win64\\x64\\pinocchio_soutrage\\debuggame\\engine\\sharedpch.engine.project.nonoptimized.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\mes jeux\\unreal\\_github\\pinocchio_s-outrage\\gamefiles\\pinocchio_soutrage\\intermediate\\build\\win64\\x64\\unrealgame\\debuggame\\pinocchio_soutrage\\definitions.pinocchio_soutrage.h",
+            "c:\\mes jeux\\unreal\\_github\\pinocchio_s-outrage\\gamefiles\\pinocchio_soutrage\\source\\pinocchio_soutrage\\public\\gamemodes\\inlevelgamemode.h",
+            "c:\\mes jeux\\unreal\\_github\\pinocchio_s-outrage\\gamefiles\\pinocchio_soutrage\\source\\pinocchio_soutrage\\public\\character\\gamecharacterenum.h",
+            "c:\\mes jeux\\unreal\\_github\\pinocchio_s-outrage\\gamefiles\\pinocchio_soutrage\\intermediate\\build\\win64\\unrealgame\\inc\\pinocchio_soutrage\\uht\\gamecharacterenum.generated.h",
+            "c:\\unreal engine\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemode.h",
+            "c:\\unreal engine\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\unreal engine\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\unreal engine\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "c:\\unreal engine\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "c:\\unreal engine\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\engine\\uht\\gamemode.generated.h",
+            "c:\\mes jeux\\unreal\\_github\\pinocchio_s-outrage\\gamefiles\\pinocchio_soutrage\\intermediate\\build\\win64\\unrealgame\\inc\\pinocchio_soutrage\\uht\\inlevelgamemode.generated.h",
+            "c:\\mes jeux\\unreal\\_github\\pinocchio_s-outrage\\gamefiles\\pinocchio_soutrage\\source\\pinocchio_soutrage\\public\\character\\gamecharactermanager.h",
+            "c:\\mes jeux\\unreal\\_github\\pinocchio_s-outrage\\gamefiles\\pinocchio_soutrage\\intermediate\\build\\win64\\unrealgame\\inc\\pinocchio_soutrage\\uht\\gamecharactermanager.generated.h",
+            "c:\\mes jeux\\unreal\\_github\\pinocchio_s-outrage\\gamefiles\\pinocchio_soutrage\\source\\pinocchio_soutrage\\public\\externaltools\\messagedebugger.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
